@@ -34,3 +34,195 @@
 frappe.exceptions.LinkValidationError: Could not find User Id: aasif.p@indictranstech.com
 
 fatal: No remote configured to list refs from.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+19:00:46 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1020, in perform_job
+    self.handle_job_success(job=job,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 970, in handle_job_success
+    pipeline.watch(job.dependents_key)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 4041, in watch
+    return self.execute_command('WATCH', *names)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3822, in execute_command
+    return self.immediate_execute_command(*args, **kwargs)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3836, in immediate_execute_command
+    conn = self.connection_pool.get_connection(command_name,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11001. Connection refused.
+
+19:00:46 Worker rq:worker:57c7aea245e8454aab7acbe331d77ead.user-HP-EliteBook-840-G2.29665.default: found an unhandled exception, quitting...
+Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 1198, in get_connection
+    if connection.can_read():
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 595, in work
+    self.execute_job(job, queue)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 856, in execute_job
+    self.monitor_work_horse(job, queue)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 818, in monitor_work_horse
+    self.set_current_job_working_time(0)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 382, in set_current_job_working_time
+    connection.hset(self.key, 'current_job_working_time', current_job_working_time)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3050, in hset
+    return self.execute_command('HSET', name, *items)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 898, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 1202, in get_connection
+    connection.connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11001. Connection refused.
+Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/user/assignment/apps/frappe/frappe/utils/bench_helper.py", line 104, in <module>
+    main()
+  File "/home/user/assignment/apps/frappe/frappe/utils/bench_helper.py", line 19, in main
+    click.Group(commands=commands)(prog_name='bench')
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/commands/scheduler.py", line 178, in start_worker
+    start_worker(queue, quiet = quiet)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 155, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work(logging_level = logging_level)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 626, in work
+    self.register_death()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11001. Connection refused.
