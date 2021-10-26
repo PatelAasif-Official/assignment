@@ -1,0 +1,8 @@
+2021-10-22 16:48:45,413 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-22 16:48:45,708 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-22 16:48:45,790 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-22 16:48:46,036 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-22 16:48:46,123 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-22 16:48:46,379 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-22 16:48:46,462 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-22 16:48:46,651 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys

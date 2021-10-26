@@ -1,0 +1,1350 @@
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+11:18:21 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/core/doctype/user/user.py", line 997, in create_contact
+    contact.insert(ignore_permissions=True, ignore_links=ignore_links, ignore_mandatory=ignore_mandatory)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 232, in insert
+    self._validate_links()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 828, in _validate_links
+    frappe.throw(_("Could not find {0}").format(msg),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.LinkValidationError: Could not find User Id: aasif.p@indictranstech.com
+
+fatal: No remote configured to list refs from.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+ConnectionError: Connection closed by server.
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+15:45:28 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+16:04:58 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+16:05:38 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+fatal: No remote configured to list refs from.
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+        response = self.parse_response(block=False, timeout=timeout)response = self.parse_response(block=False, timeout=timeout)
+
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+        if not block and not conn.can_read(timeout=timeout):if not block and not conn.can_read(timeout=timeout):
+
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+        return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+redis.exceptions.ConnectionError    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+: Connection closed by server.
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+Exception in thread Thread-1:
+Traceback (most recent call last):
+Exception in thread   File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+        return self._parser.can_read(timeout)raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+
+      File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+pubsub.get_message(ignore_subscribe_messages=True,
+redis.exceptions  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+.ConnectionError: Connection closed by server.
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+fatal: No remote configured to list refs from.
+10:58:25 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+14:15:29 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+14:29:55 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+14:32:47 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+14:35:02 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+15:12:02 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+15:13:51 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+15:18:09 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+        self.run()self.run()
+
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+Exception in thread     pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+Thread-1:
+redis.exceptions.ConnectionErrorTraceback (most recent call last):
+: Connection closed by server.
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+
+    sock = self._connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/user/assignment/apps/frappe/frappe/utils/bench_helper.py", line 104, in <module>
+    main()
+  File "/home/user/assignment/apps/frappe/frappe/utils/bench_helper.py", line 19, in main
+    click.Group(commands=commands)(prog_name='bench')
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    return self.main(*args, **kwargs)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/commands/scheduler.py", line 178, in start_worker
+    start_worker(queue, quiet = quiet)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 155, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work(logging_level = logging_level)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 626, in work
+    self.register_death()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11001. Connection refused.
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+        pubsub.get_message(ignore_subscribe_messages=True,pubsub.get_message(ignore_subscribe_messages=True,
+
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+        response = self.parse_response(block=False, timeout=timeout)response = self.parse_response(block=False, timeout=timeout)
+
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    Exception in thread pubsub.get_message(ignore_subscribe_messages=True,
+Thread-1:
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+fatal: No remote configured to list refs from.
+00:10:17 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 73, in make_notification_logs
+    _doc.insert(ignore_permissions=True)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 259, in insert
+    self.run_method("after_insert")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 16, in after_insert
+    send_notification_email(self)
+  File "/home/user/assignment/apps/frappe/frappe/desk/doctype/notification_log/notification_log.py", line 86, in send_notification_email
+    frappe.sendmail(
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 97, in get_outgoing_email_account
+    email_account.password = email_account.get_password(raise_exception=raise_exception)
+  File "/home/user/assignment/apps/frappe/frappe/model/base_document.py", line 847, in get_password
+    return get_decrypted_password(self.doctype, self.name, fieldname, raise_exception=raise_exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/password.py", line 62, in get_decrypted_password
+    frappe.throw(_("Password not found"), frappe.AuthenticationError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.AuthenticationError: Password not found
+
+00:32:14 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 419, in send_one
+    frappe.get_doc('Communication', email.communication).set_delivery_status(commit=auto_commit)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 877, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Communication 6d7c913388 not found
+
+00:32:14 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 419, in send_one
+    frappe.get_doc('Communication', email.communication).set_delivery_status(commit=auto_commit)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 877, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Communication 6bdff231f3 not found
+
+00:32:15 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 419, in send_one
+    frappe.get_doc('Communication', email.communication).set_delivery_status(commit=auto_commit)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 877, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Communication ef3dec065a not found
+
+00:36:14 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 419, in send_one
+    frappe.get_doc('Communication', email.communication).set_delivery_status(commit=auto_commit)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 877, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Communication 9f32b6b9a3 not found
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+    return self._parser.can_read(timeout)redis.exceptions
+.  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+ConnectionError: Connection closed by server.
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+11:28:08 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 419, in send_one
+    frappe.get_doc('Communication', email.communication).set_delivery_status(commit=auto_commit)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 877, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Communication 870cd08551 not found
+
+11:28:09 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 419, in send_one
+    frappe.get_doc('Communication', email.communication).set_delivery_status(commit=auto_commit)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 877, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Communication 002fd6650d not found
+
+11:28:09 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 419, in send_one
+    frappe.get_doc('Communication', email.communication).set_delivery_status(commit=auto_commit)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 877, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Communication 44f816ad9f not found
+
+11:28:10 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 419, in send_one
+    frappe.get_doc('Communication', email.communication).set_delivery_status(commit=auto_commit)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 877, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Communication 71a31146de not found
+
+11:28:10 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 419, in send_one
+    frappe.get_doc('Communication', email.communication).set_delivery_status(commit=auto_commit)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 877, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Communication 542753c5d1 not found
+
+11:28:11 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 419, in send_one
+    frappe.get_doc('Communication', email.communication).set_delivery_status(commit=auto_commit)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 877, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Communication ccbc6a5f18 not found
+
+11:28:11 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 419, in send_one
+    frappe.get_doc('Communication', email.communication).set_delivery_status(commit=auto_commit)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 877, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 75, in get_doc
+    return controller(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 113, in __init__
+    self.load_from_db()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 156, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.DoesNotExistError: Communication 0a19b23f71 not found
+

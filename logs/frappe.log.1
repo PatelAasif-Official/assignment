@@ -1,0 +1,1101 @@
+2021-10-25 18:22:19,149 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Administrator","password":"Maria@1277","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 18:22:35,141 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"admin","password":"Maria@1277","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 18:23:58,161 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Admin","password":"Maria@1277","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 18:24:46,625 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Admin","password":"Maria@1277","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 18:26:14,625 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_account_name":"Admin","email_server":"imap.example.com","smtp_server":"smtp.example.com","domain":"example.com","email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"password":"Maria@1277","smtp_port":null,"incoming_port":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 18:26:34,536 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_account_name":"Admin","email_server":"imap.example.com","smtp_server":"smtp.example.com","domain":"example.com","email_id":"admin@gmail.com","idx":0,"uidnext":0,"no_failed":0,"password":"Maria@1277"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 18:28:27,188 INFO frappe Checking incoming POP3 email server localhost:8001 ssl=0...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":0,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"admin@example.co.in","domain_name":"example.co.in","email_server":"localhost","incoming_port":"8001","smtp_server":"localhost"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 18:31:54,203 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":0,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":0,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Administrator","password":"Maria@1277","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 18:35:30,123 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":0,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Administrator","password":"admin@123","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 18:40:29,592 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":0,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Administrator","password":"admin@123","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 18:46:56,179 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"manager@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Manager","password":"manager@123","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 18:59:25,317 INFO frappe Checking incoming IMAP email server imap.example.com:8001 ssl=1...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":1,"use_ssl":1,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:29:03.362Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 18:59:25,326 WARNING frappe Incoming email account "imap.example.com" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":1,"use_ssl":1,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:29:03.362Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 34, in validate
+    test = imaplib.IMAP4_SSL(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/imaplib.py", line 1297, in __init__
+    IMAP4.__init__(self, host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 1310, in open
+    IMAP4.open(self, host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 1300, in _create_socket
+    sock = IMAP4._create_socket(self)
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+2021-10-25 18:59:35,282 INFO frappe Checking incoming IMAP email server imap.example.com:8001 ssl=0...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:29:03.362Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 18:59:35,290 WARNING frappe Incoming email account "imap.example.com" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:29:03.362Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 36, in validate
+    test = imaplib.IMAP4(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+2021-10-25 18:59:57,135 INFO frappe Checking incoming IMAP email server imap.localhost:8001 ssl=0...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.localhost","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost","use_tls":0,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:29:03.362Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 19:10:14,323 ERROR frappe New Exception collected with id: 2021-10-25 19:10:14.310721-127.0.0.1-2c8
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"projectmanagement.sys","email_id":"example@projectmanagement.sys","email_server":"imap.projectmanagement.sys","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.projectmanagement.sys","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:38:09.262Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 19:10:44,333 INFO frappe Checking incoming POP3 email server Imap.projectmanagement.sys:110 ssl=0...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":0,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 19:10:44,398 WARNING frappe Incoming email account "Imap.projectmanagement.sys" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":0,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 44, in validate
+    test = poplib.POP3(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/poplib.py", line 104, in __init__
+    self.sock = self._create_socket(timeout)
+  File "/usr/lib/python3.8/poplib.py", line 110, in _create_socket
+    return socket.create_connection((self.host, self.port), timeout)
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+2021-10-25 19:11:02,396 INFO frappe Checking incoming IMAP email server Imap.projectmanagement.sys:143 ssl=0...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":1,"use_ssl":0,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 19:11:02,412 WARNING frappe Incoming email account "Imap.projectmanagement.sys" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":1,"use_ssl":0,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 36, in validate
+    test = imaplib.IMAP4(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+2021-10-25 19:11:10,232 INFO frappe Checking incoming POP3 email server Imap.projectmanagement.sys:995 ssl=1...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 19:11:10,250 WARNING frappe Incoming email account "Imap.projectmanagement.sys" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 42, in validate
+    test = poplib.POP3_SSL(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/poplib.py", line 450, in __init__
+    POP3.__init__(self, host, port, timeout)
+  File "/usr/lib/python3.8/poplib.py", line 104, in __init__
+    self.sock = self._create_socket(timeout)
+  File "/usr/lib/python3.8/poplib.py", line 453, in _create_socket
+    sock = POP3._create_socket(self, timeout)
+  File "/usr/lib/python3.8/poplib.py", line 110, in _create_socket
+    return socket.create_connection((self.host, self.port), timeout)
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+2021-10-25 19:14:48,418 INFO frappe Checking incoming POP3 email server imap.gmail.com:993 ssl=1...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 19:14:49,097 WARNING frappe Incoming email account "imap.gmail.com" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 42, in validate
+    test = poplib.POP3_SSL(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/poplib.py", line 450, in __init__
+    POP3.__init__(self, host, port, timeout)
+  File "/usr/lib/python3.8/poplib.py", line 107, in __init__
+    self.welcome = self._getresp()
+  File "/usr/lib/python3.8/poplib.py", line 155, in _getresp
+    raise error_proto(resp)
+poplib.error_proto: b'* OK Gimap ready for requests from 2409:4042:d12:786c:4ed0:dab:800b:7317 m3mb36194522pjo'
+2021-10-25 19:15:19,130 INFO frappe Checking incoming POP3 email server imap.gmail.com:993 ssl=1...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 19:15:20,423 WARNING frappe Incoming email account "imap.gmail.com" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 42, in validate
+    test = poplib.POP3_SSL(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/poplib.py", line 450, in __init__
+    POP3.__init__(self, host, port, timeout)
+  File "/usr/lib/python3.8/poplib.py", line 107, in __init__
+    self.welcome = self._getresp()
+  File "/usr/lib/python3.8/poplib.py", line 155, in _getresp
+    raise error_proto(resp)
+poplib.error_proto: b'* OK Gimap ready for requests from 2409:4042:d12:786c:4ed0:dab:800b:7317 w1mb294651951pjd'
+2021-10-25 19:16:21,934 INFO frappe Checking incoming POP3 email server imap.gmail.com:993 ssl=1...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 19:16:22,674 WARNING frappe Incoming email account "imap.gmail.com" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 42, in validate
+    test = poplib.POP3_SSL(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/poplib.py", line 450, in __init__
+    POP3.__init__(self, host, port, timeout)
+  File "/usr/lib/python3.8/poplib.py", line 107, in __init__
+    self.welcome = self._getresp()
+  File "/usr/lib/python3.8/poplib.py", line 155, in _getresp
+    raise error_proto(resp)
+poplib.error_proto: b'* OK Gimap ready for requests from 2409:4042:d12:786c:4ed0:dab:800b:7317 me9mb87223838pjb'
+2021-10-25 19:17:16,517 INFO frappe Checking incoming IMAP email server imap.gmail.com:993 ssl=1...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":1,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 19:17:18,051 INFO frappe Checking outgoing SMTPS email server smtp.gmail.com:465...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":1,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 19:20:05,238 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":1,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","email_account_name":"Administrator","password":"Maria@1277","smtp_port":null,"incoming_port":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 19:44:36,053 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":1,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","email_account_name":"Administrator","password":"Maria@1277","smtp_port":null,"incoming_port":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
+    self.insert()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 22:57:59,999 INFO frappe Checking incoming POP3 email server imap.example.com:110 ssl=0...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":0,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 22:58:00,592 WARNING frappe Incoming email account "imap.example.com" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":0,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 44, in validate
+    test = poplib.POP3(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/poplib.py", line 104, in __init__
+    self.sock = self._create_socket(timeout)
+  File "/usr/lib/python3.8/poplib.py", line 110, in _create_socket
+    return socket.create_connection((self.host, self.port), timeout)
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+2021-10-25 22:58:41,473 INFO frappe Checking incoming POP3 email server imap.localhost.com:8001 ssl=0...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.localhost.com","use_imap":0,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 22:58:41,880 WARNING frappe Incoming email account "imap.localhost.com" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.localhost.com","use_imap":0,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 44, in validate
+    test = poplib.POP3(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/poplib.py", line 104, in __init__
+    self.sock = self._create_socket(timeout)
+  File "/usr/lib/python3.8/poplib.py", line 110, in _create_socket
+    return socket.create_connection((self.host, self.port), timeout)
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+2021-10-25 22:58:53,086 INFO frappe Checking incoming IMAP email server imap.localhost.com:8001 ssl=0...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 22:58:53,094 WARNING frappe Incoming email account "imap.localhost.com" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 36, in validate
+    test = imaplib.IMAP4(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+2021-10-25 22:59:01,653 INFO frappe Checking incoming IMAP email server pop.localhost.com:8001 ssl=0...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"pop.localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 22:59:02,045 WARNING frappe Incoming email account "pop.localhost.com" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"pop.localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 36, in validate
+    test = imaplib.IMAP4(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+2021-10-25 22:59:12,115 INFO frappe Checking incoming IMAP email server localhost.com:8001 ssl=0...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 23:01:22,317 WARNING frappe Incoming email account "localhost.com" not correct
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 36, in validate
+    test = imaplib.IMAP4(self.email_server, port=get_port(self))
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+2021-10-25 23:09:29,947 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"Administrator","owner":"Administrator","creation":"2021-10-25 22:56:03.269108","modified":"2021-10-25 22:56:03.269108","modified_by":"Administrator","idx":0,"docstatus":0,"email_id":"admin@example.com","email_account_name":"Administrator","service":"Sendgrid","password":"Maria@1277","awaiting_password":0,"ascii_encode_password":1,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"email_server":"imap.example.com","attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"smtp_server":"smtp.sendgrid.net","use_tls":1,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":1,"add_signature":0,"enable_auto_reply":0,"uidnext":0,"no_failed":0,"doctype":"Email Account","__unsaved":1,"smtp_port":587,"incoming_port":null,"domain":"example.com"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 320, in _save
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 23:09:53,070 INFO frappe Checking incoming IMAP email server imap.gmail.com:993 ssl=1...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"gmail.com","owner":"Administrator","creation":"2021-10-25 19:17:16.510151","modified":"2021-10-25 19:17:16.510151","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"gmail.com","email_id":"example@gmail.com","email_server":"imap.gmail.com","use_imap":1,"use_ssl":1,"incoming_port":"993","attachment_limit":1,"smtp_server":"smtp.gmail.com","use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"smtp_port":"465","doctype":"Email Domain","__last_sync_on":"2021-10-25T17:37:37.976Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-25 23:09:54,412 INFO frappe Checking outgoing SMTPS email server smtp.gmail.com:465...
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"gmail.com","owner":"Administrator","creation":"2021-10-25 19:17:16.510151","modified":"2021-10-25 19:17:16.510151","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"gmail.com","email_id":"example@gmail.com","email_server":"imap.gmail.com","use_imap":1,"use_ssl":1,"incoming_port":"993","attachment_limit":1,"smtp_server":"smtp.gmail.com","use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"smtp_port":"465","doctype":"Email Domain","__last_sync_on":"2021-10-25T17:37:37.976Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}

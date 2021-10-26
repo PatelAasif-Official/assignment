@@ -1,0 +1,275 @@
+2021-10-25 23:19:20,939 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"Administrator","owner":"Administrator","creation":"2021-10-25 22:56:03.269108","modified":"2021-10-25 22:56:03.269108","modified_by":"Administrator","idx":0,"docstatus":0,"email_id":"admin@example.com","email_account_name":"Administrator","service":"Sendgrid","password":"Maria@1277","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"email_server":"imap.example.com","attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"smtp_server":"smtp.sendgrid.net","use_tls":1,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"uidnext":0,"no_failed":0,"doctype":"Email Account","__unsaved":1,"smtp_port":587,"incoming_port":null,"domain":"example.com","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 320, in _save
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 23:19:33,498 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"Administrator","owner":"Administrator","creation":"2021-10-25 22:56:03.269108","modified":"2021-10-25 22:56:03.269108","modified_by":"Administrator","idx":0,"docstatus":0,"email_id":"admin@example.com","email_account_name":"Administrator","service":"Sendgrid","password":"Maria@1277","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"email_server":"imap.example.com","attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":0,"smtp_server":"smtp.sendgrid.net","use_tls":1,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"uidnext":0,"no_failed":0,"doctype":"Email Account","__unsaved":1,"smtp_port":587,"incoming_port":null,"domain":"example.com","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 320, in _save
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 23:19:41,671 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"Administrator","owner":"Administrator","creation":"2021-10-25 22:56:03.269108","modified":"2021-10-25 22:56:03.269108","modified_by":"Administrator","idx":0,"docstatus":0,"email_id":"admin@example.com","email_account_name":"Administrator","service":"Sendgrid","password":"Maria@1277","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"email_server":"imap.example.com","attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":0,"smtp_server":"smtp.sendgrid.net","use_tls":1,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"uidnext":0,"no_failed":0,"doctype":"Email Account","__unsaved":1,"smtp_port":587,"incoming_port":null,"domain":"example.com","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 320, in _save
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 23:24:28,188 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"Administrator","owner":"Administrator","creation":"2021-10-25 22:56:03.269108","modified":"2021-10-25 22:56:03.269108","modified_by":"Administrator","idx":0,"docstatus":0,"email_id":"admin@example.com","email_account_name":"Administrator","service":"Sendgrid","password":"Maria@1277","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"email_server":"imap.example.com","attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":0,"smtp_server":"smtp.sendgrid.net","use_tls":1,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"uidnext":0,"no_failed":0,"doctype":"Email Account","__unsaved":1,"smtp_port":587,"incoming_port":null,"domain":"example.com","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 320, in _save
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 23:36:02,600 ERROR frappe New Exception collected with id: 2021-10-25 23:36:02.594534-127.0.0.1-e33
+Site: projectmanagement.sys
+Form Dict: {'recipients': 'manager@example.com, ', 'subject': 'Hi', 'content': '<div class="ql-editor read-mode"><p>Its an test attampt 2</p></div>', 'send_email': '1', 'print_html': '', 'send_me_a_copy': '1', 'print_format': '', 'attachments': '[]', '_lang': 'en', 'read_receipt': '0', 'print_letterhead': '1', 'cmd': 'frappe.core.doctype.communication.email.make'}
+2021-10-25 23:43:48,848 ERROR frappe New Exception collected with id: 2021-10-25 23:43:48.843848-127.0.0.1-3ed
+Site: projectmanagement.sys
+Form Dict: {'recipients': 'manager@example.com, ', 'subject': 'Hi Its an Test Attamp 2', 'content': '<div class="ql-editor read-mode"><p>Its an test attampt 2</p></div>', 'send_email': '1', 'print_html': '', 'send_me_a_copy': '1', 'print_format': '', 'attachments': '[]', '_lang': 'en', 'read_receipt': '0', 'print_letterhead': '1', 'cmd': 'frappe.core.doctype.communication.email.make'}
+2021-10-26 00:04:04,211 ERROR frappe New Exception collected with id: 2021-10-26 00:04:04.123647-127.0.0.1-e51
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-021","owner":"manager@example.com","creation":"2021-10-25 15:13:19.314971","modified":"2021-10-26 00:02:12.984176","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"ERPNext Setup for online Salon system","project_id":"1021-021","project_title":"ERPNext For Salon sytem","start_date":"2021-10-25","end_date":"2021-11-05","status":"WIP","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 00:40:47,506 ERROR frappe New Exception collected with id: 2021-10-26 00:40:47.415042-127.0.0.1-046
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-022","owner":"manager@example.com","creation":"2021-10-26 00:10:03.568463","modified":"2021-10-26 00:12:36.497111","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"Task on Demo Project","project_id":"1021-022","project_title":"Demo Project","start_date":"2021-10-26","end_date":"2021-10-27","status":"under QA","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 00:48:03,901 ERROR frappe New Exception collected with id: 2021-10-26 00:48:03.809300-127.0.0.1-60e
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-022","owner":"manager@example.com","creation":"2021-10-26 00:10:03.568463","modified":"2021-10-26 00:41:52.759025","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"Task on Demo Project","project_id":"1021-022","project_title":"Demo Project","start_date":"2021-10-26","end_date":"2021-10-27","status":"under QA","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 00:48:27,128 ERROR frappe New Exception collected with id: 2021-10-26 00:48:27.025732-127.0.0.1-5b4
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-022","owner":"manager@example.com","creation":"2021-10-26 00:10:03.568463","modified":"2021-10-26 00:41:52.759025","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"Task on Demo Project","project_id":"1021-022","project_title":"Demo Project","start_date":"2021-10-26","end_date":"2021-10-27","status":"under QA","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 00:49:12,121 ERROR frappe New Exception collected with id: 2021-10-26 00:49:12.026305-127.0.0.1-f1d
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-022","owner":"manager@example.com","creation":"2021-10-26 00:10:03.568463","modified":"2021-10-26 00:41:52.759025","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"Task on Demo Project","project_id":"1021-022","project_title":"Demo Project","start_date":"2021-10-26","end_date":"2021-10-27","status":"under QA","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 00:52:28,045 ERROR frappe New Exception collected with id: 2021-10-26 00:52:27.949295-127.0.0.1-8ce
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-022","owner":"manager@example.com","creation":"2021-10-26 00:10:03.568463","modified":"2021-10-26 00:50:26.073823","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"Task on Demo Project","project_id":"1021-022","project_title":"Demo Project","start_date":"2021-10-26","end_date":"2021-10-27","status":"WIP","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 11:09:20,080 ERROR frappe New Exception collected with id: 2021-10-26 11:09:19.998931-127.0.0.1-ba9
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-021","owner":"manager@example.com","creation":"2021-10-25 15:13:19.314971","modified":"2021-10-26 11:02:06.827862","modified_by":"qa@example.com","idx":0,"docstatus":0,"task_title":"ERPNext Setup for online Salon system","project_id":"1021-021","project_title":"ERPNext For Salon sytem","start_date":"2021-10-25","end_date":"2021-11-05","status":"under QA","assignee":"manager@example.com","doctype":"Project Task","__last_sync_on":"2021-10-26T05:39:15.622Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
