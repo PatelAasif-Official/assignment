@@ -1405,3 +1405,454 @@ redis.exceptions.ConnectionError: Connection closed by server.
   File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
     raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
 redis.exceptions.ConnectionError: Connection closed by server.
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    sock = self._connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+    sock.connect(socket_address)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 559, in connect
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/user/assignment/apps/frappe/frappe/utils/bench_helper.py", line 104, in <module>
+    main()
+  File "/home/user/assignment/apps/frappe/frappe/utils/bench_helper.py", line 19, in main
+    click.Group(commands=commands)(prog_name='bench')
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    sock = self._connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 615, in _connect
+    raise err
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 603, in _connect
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/user/assignment/apps/frappe/frappe/utils/bench_helper.py", line 104, in <module>
+    return self.main(*args, **kwargs)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+        main()self.run()
+
+  File "/home/user/assignment/apps/frappe/frappe/utils/bench_helper.py", line 19, in main
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    click.Group(commands=commands)(prog_name='bench')
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 829, in __call__
+    rv = self.invoke(ctx)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return self.main(*args, **kwargs)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 782, in main
+    rv = self.invoke(ctx)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1259, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 1066, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    return callback(*args, **kwargs)    
+return ctx.invoke(self.callback, **ctx.params)  File "/home/user/assignment/apps/frappe/frappe/commands/scheduler.py", line 178, in start_worker
+
+  File "/home/user/assignment/env/lib/python3.8/site-packages/click/core.py", line 610, in invoke
+    start_worker(queue, quiet = quiet)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 155, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work(logging_level = logging_level)    
+return callback(*args, **kwargs)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 626, in work
+  File "/home/user/assignment/apps/frappe/frappe/commands/scheduler.py", line 178, in start_worker
+    start_worker(queue, quiet = quiet)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 155, in start_worker
+    Worker(queues, name=get_worker_name(queue)).work(logging_level = logging_level)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 626, in work
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.register_death()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 326, in register_death
+    p.execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 4012, in execute
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to localhost:11001. Connection refused.
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    self.register_death()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 326, in register_death
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+        p.execute()return self._buffer and self._buffer.can_read(timeout)
+
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 4012, in execute
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    conn = self.connection_pool.get_connection('MULTI',
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 1192, in get_connection
+    connection.connect()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 563, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 104 connecting to localhost:11001. Connection reset by peer.
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+      File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+        return self._buffer and self._buffer.can_read(timeout)self._read_from_socket(timeout=timeout,
+
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+    self._read_from_socket(timeout=timeout,
+redis.exceptions  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+.ConnectionError: Connection closed by server.
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 321, in can_read
+    return self._buffer and self._buffer.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 230, in can_read
+    self._read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 201, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/past/builtins/misc.py:45: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+/home/user/assignment/env/lib/python3.8/site-packages/bleach_whitelist/bleach_whitelist.py:3: DeprecationWarning: bleach-whitelist has been renamed bleach-allowlist. It will not receive further updates under the old name. See https://pypi.org/project/bleach-allowlist
+  warnings.warn(
+14:03:00 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/core/doctype/user/user.py", line 997, in create_contact
+    contact.insert(ignore_permissions=True, ignore_links=ignore_links, ignore_mandatory=ignore_mandatory)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 232, in insert
+    self._validate_links()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 828, in _validate_links
+    frappe.throw(_("Could not find {0}").format(msg),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.LinkValidationError: Could not find User Id: patelasif@example.com
+
+14:03:02 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/core/doctype/user/user.py", line 997, in create_contact
+    contact.insert(ignore_permissions=True, ignore_links=ignore_links, ignore_mandatory=ignore_mandatory)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 232, in insert
+    self._validate_links()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 828, in _validate_links
+    frappe.throw(_("Could not find {0}").format(msg),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.LinkValidationError: Could not find User Id: patelasif@example.com
+
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+14:46:38 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+14:46:38 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+14:47:26 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+

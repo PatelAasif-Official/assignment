@@ -150,3 +150,180 @@ To avoid seeing this warning, set shallow_clone to false in your common_site_con
 2021-10-26 10:02:45,518 INFO /usr/local/bin/bench serve --port 8001
 2021-10-26 10:38:45,032 INFO /usr/local/bin/bench --site projectmanagement.sys mariadb
 2021-10-26 12:00:02,151 INFO /usr/local/bin/bench --verbose --site all backup
+2021-10-26 18:00:01,536 INFO /usr/local/bin/bench --verbose --site all backup
+2021-10-26 18:19:18,461 INFO /usr/local/bin/bench start
+2021-10-26 18:19:19,471 INFO /usr/local/bin/bench schedule
+2021-10-26 18:19:19,475 INFO /usr/local/bin/bench worker --queue long
+2021-10-26 18:19:19,612 INFO /usr/local/bin/bench serve --port 8001
+2021-10-26 18:19:19,686 INFO /usr/local/bin/bench worker --queue default
+2021-10-26 18:19:19,689 INFO /usr/local/bin/bench watch
+2021-10-26 18:19:19,695 INFO /usr/local/bin/bench worker --queue short
+2021-10-27 12:00:02,327 INFO /usr/local/bin/bench --verbose --site all backup
+2021-10-27 18:00:01,537 INFO /usr/local/bin/bench --verbose --site all backup
+2021-10-28 11:55:50,470 INFO /usr/local/bin/bench start
+2021-10-28 11:55:51,609 INFO /usr/local/bin/bench schedule
+2021-10-28 11:55:51,723 INFO /usr/local/bin/bench watch
+2021-10-28 11:55:51,728 INFO /usr/local/bin/bench worker --queue short
+2021-10-28 11:55:51,852 INFO /usr/local/bin/bench worker --queue long
+2021-10-28 11:55:51,865 INFO /usr/local/bin/bench worker --queue default
+2021-10-28 11:55:51,877 INFO /usr/local/bin/bench serve --port 8001
+2021-10-28 11:56:13,194 INFO /usr/local/bin/bench find
+2021-10-28 12:00:01,732 INFO /usr/local/bin/bench --verbose --site all backup
+2021-10-28 12:03:28,261 INFO /usr/local/bin/bench --site projectmanagement.sys installed-app
+2021-10-28 12:04:01,123 INFO /usr/local/bin/bench drop-site projectmanagement.system no-backup
+2021-10-28 12:04:20,499 INFO /usr/local/bin/bench drop-site projectmanagement.system --no-backup
+2021-10-28 12:27:56,030 INFO /usr/local/bin/bench new-site erpnextuse.case
+2021-10-28 12:28:59,989 INFO /usr/local/bin/bench get-app erpnext
+2021-10-28 12:29:01,284 LOG Getting app erpnext
+2021-10-28 12:29:01,285 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext  --depth 1 --origin upstream
+2021-10-28 12:31:47,108 LOG installing erpnext
+2021-10-28 12:31:47,108 DEBUG ./env/bin/python -m pip install -q -U -e ./apps/erpnext 
+2021-10-28 12:32:07,313 DEBUG cd ./apps/erpnext && yarn install
+2021-10-28 12:32:09,960 DEBUG bench build --app erpnext
+2021-10-28 12:32:10,157 INFO /usr/local/bin/bench build --app erpnext
+2021-10-28 12:32:34,166 INFO /usr/local/bin/bench version
+2021-10-28 12:32:49,888 INFO /usr/local/bin/bench --help
+2021-10-28 12:33:04,186 INFO /usr/local/bin/bench --version
+2021-10-28 12:33:10,770 INFO /usr/local/bin/bench version
+2021-10-28 12:35:17,586 INFO /usr/local/bin/bench --site erpnextuse.case install-app erpnext
+2021-10-28 12:36:00,548 INFO /usr/local/bin/bench reinstall-app erpnext version-13
+2021-10-28 12:36:00,815 WARNING /usr/local/bin/bench reinstall-app erpnext version-13 executed with exit code 2
+2021-10-28 12:51:51,637 INFO /usr/local/bin/bench uninstall-app erpnext
+2021-10-28 12:52:39,388 INFO /usr/local/bin/bench get-app erpnext version-13
+2021-10-28 12:52:45,445 ERROR App version-13 not found
+2021-10-28 12:52:45,446 WARNING /usr/local/bin/bench get-app erpnext version-13 executed with exit code 1
+2021-10-28 12:53:00,500 INFO /usr/local/bin/bench get-app erpnext version13
+2021-10-28 12:53:01,565 ERROR App version13 not found
+2021-10-28 12:53:01,566 WARNING /usr/local/bin/bench get-app erpnext version13 executed with exit code 1
+2021-10-28 12:53:08,368 INFO /usr/local/bin/bench get-app erpnext version 13
+2021-10-28 12:53:09,381 ERROR App 13 not found
+2021-10-28 12:53:09,383 WARNING /usr/local/bin/bench get-app erpnext version 13 executed with exit code 1
+2021-10-28 12:54:08,568 INFO /usr/local/bin/bench get-app erpnext v13
+2021-10-28 12:54:09,490 ERROR App v13 not found
+2021-10-28 12:54:09,491 WARNING /usr/local/bin/bench get-app erpnext v13 executed with exit code 1
+2021-10-28 12:54:13,680 INFO /usr/local/bin/bench get-app erpnext v-13
+2021-10-28 12:54:14,541 ERROR App v-13 not found
+2021-10-28 12:54:14,542 WARNING /usr/local/bin/bench get-app erpnext v-13 executed with exit code 1
+2021-10-28 12:57:45,988 INFO /usr/local/bin/bench get-app --branch version-13-beta erpnext
+2021-10-28 12:57:47,063 LOG Getting app erpnext
+2021-10-28 12:57:47,064 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext --branch version-13-beta --depth 1 --origin upstream
+2021-10-28 12:57:51,498 WARNING /usr/local/bin/bench get-app --branch version-13-beta erpnext executed with exit code 1
+2021-10-28 12:58:25,348 INFO /usr/local/bin/bench get-app --branch version-13 erpnext
+2021-10-28 12:58:26,319 LOG Getting app erpnext
+2021-10-28 12:58:26,320 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext --branch version-13 --depth 1 --origin upstream
+2021-10-28 12:59:47,598 LOG installing erpnext
+2021-10-28 12:59:47,598 DEBUG ./env/bin/python -m pip install -q -U -e ./apps/erpnext 
+2021-10-28 12:59:56,888 DEBUG cd ./apps/erpnext && yarn install
+2021-10-28 12:59:57,641 DEBUG bench build --app erpnext
+2021-10-28 12:59:57,852 INFO /usr/local/bin/bench build --app erpnext
+2021-10-28 13:00:56,254 INFO /usr/local/bin/bench version
+2021-10-28 13:02:19,929 INFO /usr/local/bin/bench --site erpnextuse.case install-app erpnext
+2021-10-28 13:02:43,734 INFO /usr/local/bin/bench --help
+2021-10-28 13:06:00,534 INFO /usr/local/bin/bench remove-site erpnextuse.case
+2021-10-28 13:06:00,815 WARNING /usr/local/bin/bench remove-site erpnextuse.case executed with exit code 2
+2021-10-28 13:07:40,148 INFO /usr/local/bin/bench drop-site erpnextuse.case --no-backup
+2021-10-28 13:08:16,853 INFO /usr/local/bin/bench update
+2021-10-28 13:08:19,387 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2021-10-28 13:08:31,046 DEBUG cd /home/user/assignment/apps/frappe && git fetch upstream --unshallow
+2021-10-28 13:08:36,255 LOG pulling frappe
+2021-10-28 13:08:36,255 DEBUG cd /home/user/assignment/apps/frappe && git pull  upstream version-13
+2021-10-28 13:08:39,355 DEBUG cd /home/user/assignment/apps/frappe && find . -name "*.pyc" -delete
+2021-10-28 13:08:39,519 DEBUG cd /home/user/assignment/apps/erpnext && git fetch upstream --unshallow
+2021-10-28 13:16:47,372 WARNING cd /home/user/assignment/apps/erpnext && git fetch upstream --unshallow executed with exit code 128
+2021-10-28 13:16:47,377 LOG pulling erpnext
+2021-10-28 13:16:47,378 DEBUG cd /home/user/assignment/apps/erpnext && git pull  upstream version-13
+2021-10-28 13:16:48,780 DEBUG cd /home/user/assignment/apps/erpnext && find . -name "*.pyc" -delete
+2021-10-28 13:16:48,826 DEBUG /home/user/assignment/env/bin/python -m pip install -q -U pip
+2021-10-28 13:16:53,170 LOG installing frappe
+2021-10-28 13:16:53,170 DEBUG /home/user/assignment/env/bin/python -m pip install -q -U -e /home/user/assignment/apps/frappe 
+2021-10-28 13:16:57,977 DEBUG cd /home/user/assignment/apps/frappe && yarn install
+2021-10-28 13:17:09,265 LOG installing project_management
+2021-10-28 13:17:09,266 DEBUG /home/user/assignment/env/bin/python -m pip install -q -U -e /home/user/assignment/apps/project_management 
+2021-10-28 13:17:11,428 LOG installing erpnext
+2021-10-28 13:17:11,428 DEBUG /home/user/assignment/env/bin/python -m pip install -q -U -e /home/user/assignment/apps/erpnext 
+2021-10-28 13:17:19,100 DEBUG cd /home/user/assignment/apps/erpnext && yarn install
+2021-10-28 13:17:19,553 DEBUG cd /home/user/assignment/apps/frappe && yarn install
+2021-10-28 13:17:32,199 DEBUG cd /home/user/assignment/apps/erpnext && yarn install
+2021-10-28 13:17:33,618 WARNING /usr/local/bin/bench update executed with exit code 1
+2021-10-28 13:17:55,538 INFO /usr/local/bin/bench version
+2021-10-28 13:20:01,009 INFO /usr/local/bin/bench switch-to-branch version-13
+2021-10-28 13:20:01,450 INFO Fetching upstream for frappe
+2021-10-28 13:20:01,451 DEBUG cd ./apps/frappe && git remote set-branches upstream  '*'
+2021-10-28 13:20:01,455 DEBUG cd ./apps/frappe && git fetch --all --quiet
+2021-10-28 13:20:08,233 DEBUG cd ./apps/frappe && git checkout -f version-13
+2021-10-28 13:20:49,370 INFO /usr/local/bin/bench erpnext switch-to-branch version-13
+2021-10-28 13:21:07,125 INFO /usr/local/bin/bench --update erpnext
+2021-10-28 13:21:07,457 WARNING /usr/local/bin/bench --update erpnext executed with exit code 2
+2021-10-28 13:21:12,026 INFO /usr/local/bin/bench update erpnext
+2021-10-28 13:21:12,311 WARNING /usr/local/bin/bench update erpnext executed with exit code 2
+2021-10-28 13:21:21,826 INFO /usr/local/bin/bench update-erpnext
+2021-10-28 13:21:22,117 WARNING /usr/local/bin/bench update-erpnext executed with exit code 2
+2021-10-28 13:21:32,492 INFO /usr/local/bin/bench update-app erpnext
+2021-10-28 13:21:32,785 WARNING /usr/local/bin/bench update-app erpnext executed with exit code 2
+2021-10-28 13:21:47,807 INFO /usr/local/bin/bench --help
+2021-10-28 13:28:04,134 INFO /usr/local/bin/bench get-app --branch master erpnext
+2021-10-28 13:28:16,529 LOG Getting app erpnext
+2021-10-28 13:28:16,529 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext --branch master --depth 1 --origin upstream
+2021-10-28 13:31:51,842 LOG installing erpnext
+2021-10-28 13:31:51,842 DEBUG ./env/bin/python -m pip install -q -U -e ./apps/erpnext 
+2021-10-28 13:31:57,937 DEBUG bench build --app erpnext
+2021-10-28 13:31:58,138 INFO /usr/local/bin/bench build --app erpnext
+2021-10-28 13:32:29,926 INFO /usr/local/bin/bench version
+2021-10-28 13:33:51,624 INFO /usr/local/bin/bench get-app --update erpnext
+2021-10-28 13:33:51,960 WARNING /usr/local/bin/bench get-app --update erpnext executed with exit code 2
+2021-10-28 13:34:10,227 INFO /usr/local/bin/bench get-app --branch version-13 erpnext
+2021-10-28 13:35:11,451 INFO /usr/local/bin/bench get-app --branch version-13 erpnext
+2021-10-28 13:35:12,525 LOG Getting app erpnext
+2021-10-28 13:35:12,526 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext --branch version-13 --depth 1 --origin upstream
+2021-10-28 13:36:25,212 LOG installing erpnext
+2021-10-28 13:36:25,212 DEBUG ./env/bin/python -m pip install -q -U -e ./apps/erpnext 
+2021-10-28 13:36:32,857 DEBUG cd ./apps/erpnext && yarn install
+2021-10-28 13:36:33,748 DEBUG bench build --app erpnext
+2021-10-28 13:36:33,955 INFO /usr/local/bin/bench build --app erpnext
+2021-10-28 13:37:09,541 INFO /usr/local/bin/bench version
+2021-10-28 13:37:48,977 INFO /usr/local/bin/bench new-site erpnextuse.case
+2021-10-28 13:39:07,340 INFO /usr/local/bin/bench --site erpnextuse.case install-app erpnext
+2021-10-28 13:41:23,854 INFO /usr/local/bin/bench --site erpnextuse.case add-to-hosts
+2021-10-28 13:41:53,328 INFO /usr/local/bin/bench start
+2021-10-28 13:41:54,566 INFO /usr/local/bin/bench serve --port 8001
+2021-10-28 13:41:54,671 INFO /usr/local/bin/bench schedule
+2021-10-28 13:41:54,681 INFO /usr/local/bin/bench worker --queue short
+2021-10-28 13:41:54,687 INFO /usr/local/bin/bench watch
+2021-10-28 13:41:54,726 INFO /usr/local/bin/bench worker --queue default
+2021-10-28 13:41:54,747 INFO /usr/local/bin/bench worker --queue long
+2021-10-28 13:42:33,779 INFO /usr/local/bin/bench update
+2021-10-28 13:42:36,608 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2021-10-28 13:42:54,669 DEBUG cd /home/user/assignment/apps/frappe && git fetch upstream --unshallow
+2021-10-28 13:43:01,485 LOG pulling frappe
+2021-10-28 13:43:01,485 DEBUG cd /home/user/assignment/apps/frappe && git pull  upstream version-13
+2021-10-28 13:43:03,783 DEBUG cd /home/user/assignment/apps/frappe && find . -name "*.pyc" -delete
+2021-10-28 13:43:04,775 DEBUG cd /home/user/assignment/apps/erpnext && git fetch upstream --unshallow
+2021-10-28 13:54:57,602 LOG pulling erpnext
+2021-10-28 13:54:57,603 DEBUG cd /home/user/assignment/apps/erpnext && git pull  upstream version-13
+2021-10-28 13:54:59,123 DEBUG cd /home/user/assignment/apps/erpnext && find . -name "*.pyc" -delete
+2021-10-28 13:54:59,259 DEBUG /home/user/assignment/env/bin/python -m pip install -q -U pip
+2021-10-28 13:55:01,089 LOG installing frappe
+2021-10-28 13:55:01,089 DEBUG /home/user/assignment/env/bin/python -m pip install -q -U -e /home/user/assignment/apps/frappe 
+2021-10-28 13:55:05,406 DEBUG cd /home/user/assignment/apps/frappe && yarn install
+2021-10-28 13:55:18,745 LOG installing project_management
+2021-10-28 13:55:18,746 DEBUG /home/user/assignment/env/bin/python -m pip install -q -U -e /home/user/assignment/apps/project_management 
+2021-10-28 13:55:20,934 LOG installing erpnext
+2021-10-28 13:55:20,935 DEBUG /home/user/assignment/env/bin/python -m pip install -q -U -e /home/user/assignment/apps/erpnext 
+2021-10-28 13:55:28,660 DEBUG cd /home/user/assignment/apps/erpnext && yarn install
+2021-10-28 13:55:29,040 DEBUG cd /home/user/assignment/apps/frappe && yarn install
+2021-10-28 13:55:40,254 DEBUG cd /home/user/assignment/apps/erpnext && yarn install
+2021-10-28 13:55:56,838 DEBUG cd /home/user/assignment && bench build
+2021-10-28 13:55:57,127 INFO /usr/local/bin/bench build
+2021-10-28 14:00:34,939 INFO /usr/local/bin/bench version

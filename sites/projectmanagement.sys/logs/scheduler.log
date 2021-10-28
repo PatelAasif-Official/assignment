@@ -1,265 +1,229 @@
-2021-10-26 13:29:33,783 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:30:34,000 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:30:34,058 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-26 13:30:34,372 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-26 13:30:34,460 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-26 13:30:34,823 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-26 13:30:34,904 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-26 13:30:35,277 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-26 13:31:34,247 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:32:34,474 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:32:34,510 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:32:34,689 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:32:34,767 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:32:34,945 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:32:35,027 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:32:35,340 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:32:35,422 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:32:35,681 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:32:35,765 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:32:36,031 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:32:36,116 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:32:36,315 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:33:34,677 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:34:34,878 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:35:35,078 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:36:35,364 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:36:35,384 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:36:35,596 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:36:35,691 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:36:35,874 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:36:35,955 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:36:36,244 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:36:36,327 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:36:36,595 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:36:36,679 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:36:36,939 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:36:37,016 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:36:37,207 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:37:35,570 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:38:35,795 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:39:36,009 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:40:36,242 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:40:36,276 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:40:36,489 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:40:36,570 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:40:36,753 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:40:36,829 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:40:37,128 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:40:37,210 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:40:37,479 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:40:37,563 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:40:37,825 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:40:37,908 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:40:38,100 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:41:36,445 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:42:36,647 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:43:36,857 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:44:37,085 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:44:37,121 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:44:37,328 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:44:37,405 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:44:37,624 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:44:37,702 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:44:37,993 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:44:38,067 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:44:38,325 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:44:38,410 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:44:38,710 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:44:38,796 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:44:38,988 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:45:37,299 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:45:37,362 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-26 13:45:37,751 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-26 13:45:37,838 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-26 13:45:38,241 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-26 13:45:38,320 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-26 13:45:38,764 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-26 13:46:37,500 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:47:37,698 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:48:37,929 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:48:37,965 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:48:38,141 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:48:38,226 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:48:38,434 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:48:38,517 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:48:38,844 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:48:38,922 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:48:39,191 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:48:39,271 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:48:39,528 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:48:39,608 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:48:39,827 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:49:38,123 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:50:38,320 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:51:38,517 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:52:38,744 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:52:38,777 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:52:38,957 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:52:39,043 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:52:39,221 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:52:39,296 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:52:39,619 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:52:39,698 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:52:39,959 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:52:40,037 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:52:40,337 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:52:40,416 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:52:40,603 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:53:38,953 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:54:39,145 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:55:39,364 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:56:39,602 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:56:39,634 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:56:39,854 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 13:56:39,927 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:56:40,106 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 13:56:40,184 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:56:40,517 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 13:56:40,594 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:56:40,884 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 13:56:40,963 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:56:41,230 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 13:56:41,310 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:56:41,541 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 13:57:39,807 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:58:40,008 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 13:59:40,204 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:00:40,450 INFO scheduler Scheduled Job Start: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for projectmanagement.sys
-2021-10-26 14:00:40,506 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:00:40,848 INFO scheduler Scheduled Job Complete: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for projectmanagement.sys
-2021-10-26 14:00:40,930 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync for projectmanagement.sys
-2021-10-26 14:00:41,417 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync for projectmanagement.sys
-2021-10-26 14:00:41,505 INFO scheduler Scheduled Job Start: frappe.desk.form.document_follow.send_hourly_updates for projectmanagement.sys
-2021-10-26 14:00:41,809 INFO scheduler Scheduled Job Complete: frappe.desk.form.document_follow.send_hourly_updates for projectmanagement.sys
-2021-10-26 14:00:41,891 INFO scheduler Scheduled Job Start: frappe.deferred_insert.save_to_db for projectmanagement.sys
-2021-10-26 14:00:42,170 INFO scheduler Scheduled Job Complete: frappe.deferred_insert.save_to_db for projectmanagement.sys
-2021-10-26 14:00:42,253 INFO scheduler Scheduled Job Start: frappe.desk.page.backups.backups.delete_downloadable_backups for projectmanagement.sys
-2021-10-26 14:00:42,553 INFO scheduler Scheduled Job Complete: frappe.desk.page.backups.backups.delete_downloadable_backups for projectmanagement.sys
-2021-10-26 14:00:42,634 INFO scheduler Scheduled Job Start: frappe.utils.error.collect_error_snapshots for projectmanagement.sys
-2021-10-26 14:00:42,972 INFO scheduler Scheduled Job Complete: frappe.utils.error.collect_error_snapshots for projectmanagement.sys
-2021-10-26 14:00:43,058 INFO scheduler Scheduled Job Start: frappe.model.utils.user_settings.sync_user_settings for projectmanagement.sys
-2021-10-26 14:00:43,345 INFO scheduler Scheduled Job Complete: frappe.model.utils.user_settings.sync_user_settings for projectmanagement.sys
-2021-10-26 14:00:43,428 INFO scheduler Scheduled Job Start: frappe.model.utils.link_count.update_link_count for projectmanagement.sys
-2021-10-26 14:00:43,723 INFO scheduler Scheduled Job Complete: frappe.model.utils.link_count.update_link_count for projectmanagement.sys
-2021-10-26 14:00:43,806 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:00:44,025 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:00:44,104 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:00:44,321 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:00:44,396 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:00:44,745 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:00:44,829 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:00:45,069 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:00:45,145 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:00:45,415 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:00:45,490 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:00:45,687 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:00:45,771 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-26 14:00:46,091 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-26 14:00:46,174 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-26 14:00:46,535 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-26 14:00:46,622 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-26 14:00:47,000 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-26 14:01:40,711 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:02:41,133 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:03:41,467 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:04:41,801 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:04:41,839 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:04:42,161 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:04:42,243 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:04:42,421 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:04:42,502 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:04:42,894 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:04:42,976 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:04:43,308 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:04:43,390 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:04:43,642 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:04:43,726 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:04:43,923 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:05:42,023 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:06:42,313 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:07:42,505 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:08:42,748 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:08:42,784 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:08:43,101 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:08:43,190 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:08:43,428 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:08:43,518 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:08:43,999 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:08:44,084 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:08:44,366 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:08:44,452 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:08:44,788 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:08:44,905 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:08:45,201 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:09:42,949 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:10:43,151 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:11:43,354 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:12:43,592 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:12:43,631 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:12:43,844 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:12:43,925 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:12:44,112 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:12:44,204 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:12:44,510 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:12:44,592 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:12:44,898 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:12:44,975 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:12:45,232 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:12:45,316 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:12:45,601 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:13:43,798 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:14:44,004 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:15:44,218 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:15:44,276 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-26 14:15:44,695 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-26 14:15:44,776 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-26 14:15:45,220 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-26 14:15:45,303 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-26 14:15:45,743 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-26 14:16:44,454 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:16:44,492 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:16:44,714 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:16:44,795 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:16:44,984 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:16:45,069 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:16:45,373 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:16:45,467 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:16:45,884 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:16:46,004 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:16:46,326 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:16:46,416 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:16:46,717 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:17:44,675 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:18:44,941 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:19:45,143 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:20:45,396 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:20:45,421 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:20:45,593 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:20:45,667 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:20:45,852 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:20:45,934 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:20:46,223 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:20:46,312 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:20:46,583 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:20:46,674 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:20:46,935 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:20:47,014 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:20:47,346 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:21:45,590 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:22:45,789 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:23:45,990 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:24:46,238 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-26 14:24:46,277 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:24:46,466 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-26 14:24:46,547 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:24:46,731 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-26 14:24:46,809 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:24:47,134 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-26 14:24:47,225 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:24:47,539 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-26 14:24:47,619 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:24:47,879 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-26 14:24:47,959 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:24:48,229 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-26 14:25:46,438 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:05:03,601 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:06:04,081 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:07:04,517 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:08:05,116 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:08:08,345 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:08:08,543 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:08:08,635 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:08:08,845 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:08:08,940 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:08:09,311 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:08:09,389 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:08:09,683 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:08:09,776 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:08:10,072 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:08:10,178 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:08:10,391 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:09:05,502 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:10:05,887 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:11:06,452 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:12:07,114 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:12:10,186 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:12:10,401 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:12:10,492 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:12:10,695 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:12:10,787 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:12:11,099 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:12:11,176 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:12:11,466 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:12:11,560 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:12:11,856 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:12:11,949 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:12:12,159 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:13:07,580 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:14:08,141 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:15:08,622 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:15:09,723 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
+2021-10-28 14:15:10,098 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
+2021-10-28 14:15:10,194 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
+2021-10-28 14:15:10,608 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
+2021-10-28 14:15:10,720 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
+2021-10-28 14:15:11,094 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
+2021-10-28 14:16:09,343 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:16:13,155 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:16:13,369 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:16:13,484 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:16:13,692 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:16:13,773 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:16:14,198 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:16:14,295 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:16:14,618 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:16:14,741 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:16:15,018 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:16:15,101 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:16:15,301 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:17:10,002 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:18:10,455 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:19:10,909 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:20:11,599 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:20:15,520 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:20:15,867 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:20:15,989 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:20:16,272 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:20:16,400 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:20:16,754 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:20:16,845 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:20:17,312 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:20:17,445 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:20:18,040 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:20:18,267 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:20:18,614 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:21:12,079 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:22:12,468 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:23:12,871 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:24:13,400 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:24:17,412 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:24:17,619 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:24:17,733 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:24:17,969 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:24:18,104 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:24:18,557 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:24:18,652 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:24:18,950 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:24:19,049 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:24:19,371 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:24:19,464 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:24:19,685 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:25:13,803 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:26:14,205 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:27:14,686 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:28:15,200 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:28:18,762 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:28:18,941 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:28:19,021 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:28:19,206 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:28:19,297 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:28:19,736 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:28:19,850 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:28:20,141 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:28:20,223 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:28:20,638 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:28:20,776 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:28:21,088 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:29:15,662 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:30:16,264 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:30:18,118 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
+2021-10-28 14:30:18,859 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
+2021-10-28 14:30:19,008 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
+2021-10-28 14:30:19,584 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
+2021-10-28 14:30:19,710 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
+2021-10-28 14:30:20,346 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
+2021-10-28 14:31:16,771 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:32:17,332 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:32:21,081 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:32:21,353 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:32:21,445 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:32:21,664 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:32:21,744 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:32:22,122 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:32:22,349 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:32:22,921 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:32:23,111 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:32:23,646 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:32:23,794 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:32:24,097 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:33:17,805 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:34:18,269 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:35:18,680 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:36:19,555 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:36:23,845 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:36:24,046 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:36:24,149 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:36:24,390 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:36:24,499 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:36:24,886 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:36:25,001 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:36:25,311 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:36:25,425 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:36:25,835 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:36:25,963 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:36:26,279 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:37:19,973 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:38:20,361 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:39:20,751 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:40:21,358 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:40:25,328 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:40:25,619 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:40:25,749 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:40:25,965 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:40:26,050 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:40:26,491 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:40:26,588 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:40:27,000 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:40:27,094 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:40:27,405 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:40:27,498 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:40:27,771 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:41:21,861 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:42:22,253 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:43:22,656 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:44:23,170 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:44:26,991 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:44:27,198 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:44:27,299 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:44:27,592 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:44:27,712 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:44:28,079 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:44:28,165 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:44:28,430 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:44:28,533 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:44:28,961 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:44:29,056 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:44:29,285 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:45:23,660 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:45:25,202 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
+2021-10-28 14:45:25,692 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
+2021-10-28 14:45:25,827 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
+2021-10-28 14:45:26,445 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
+2021-10-28 14:45:26,552 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
+2021-10-28 14:45:27,009 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
+2021-10-28 14:46:24,118 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:47:25,188 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:48:25,831 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:48:29,612 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:48:29,827 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:48:29,915 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:48:30,233 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:48:30,393 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:48:30,835 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:48:30,932 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:48:31,350 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:48:31,429 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:48:31,853 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:48:31,995 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:48:32,271 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:49:26,210 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:50:26,743 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:51:27,219 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:52:27,724 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:52:31,747 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:52:31,989 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:52:32,101 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:52:32,326 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:52:32,441 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:52:32,811 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:52:32,900 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:52:33,198 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:52:33,297 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:52:33,594 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:52:33,692 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:52:34,028 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:53:28,298 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:54:28,695 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:55:29,110 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:56:29,728 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:56:34,281 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:56:34,479 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-10-28 14:56:34,584 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:56:34,798 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-10-28 14:56:34,893 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:56:35,278 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-10-28 14:56:35,364 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:56:35,744 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-10-28 14:56:35,874 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:56:36,300 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-10-28 14:56:36,415 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:56:36,707 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-28 14:57:30,404 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:58:30,940 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-28 14:59:31,373 DEBUG scheduler Queued events for site projectmanagement.sys
