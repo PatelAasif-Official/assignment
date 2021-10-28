@@ -570,3 +570,22 @@ Traceback (most recent call last):
     raise errorclass(errno, errval)
 pymysql.err.OperationalError: (1045, "Access denied for user '_72158affdf1791ca'@'localhost' (using password: YES)")
 
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211028_180002-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-10-28 18:00:06.917402
+Config  : ./erpnextuse.case/private/backups/20211028_180002-erpnextuse_case-site_config_backup.json 158.0B
+Database: ./erpnextuse.case/private/backups/20211028_180002-erpnextuse_case-database.sql.gz         1.8MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211028_130829-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211028_120002-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211027_180002-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211028_120002-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211028_134247-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211028_130829-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211028_134247-projectmanagement_sys-database.sql.gz is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211028_180006-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-10-28 18:00:08.276349
+Config  : ./projectmanagement.sys/private/backups/20211028_180006-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211028_180006-projectmanagement_sys-database.sql.gz         559.4KiB
+Backup for Site projectmanagement.sys has been successfully completed
