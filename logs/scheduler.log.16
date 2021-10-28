@@ -1,6 +1,37 @@
-2021-10-25 13:40:44,186 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-25 13:40:44,561 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-25 13:40:44,643 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-25 13:40:44,937 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-25 13:40:45,044 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-25 13:40:45,308 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-10-25 19:13:45,345 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:14:45,553 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:15:45,794 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:16:46,030 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:17:46,228 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:18:46,447 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:19:46,642 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:20:46,863 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:21:47,063 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:22:47,251 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:23:47,450 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:24:47,670 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:25:47,872 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:26:48,078 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:27:48,263 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:28:48,489 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:29:48,756 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:30:48,989 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:31:49,198 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:32:49,523 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:33:49,775 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:34:49,978 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:35:50,186 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:36:50,417 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:37:50,606 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:38:50,813 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:39:51,004 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:40:51,255 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:41:51,471 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:42:51,756 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:43:51,976 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:44:52,209 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:45:52,421 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:46:52,629 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:47:52,843 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:48:53,076 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-10-25 19:49:53,271 DEBUG scheduler Queued events for site projectmanagement.sys

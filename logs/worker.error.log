@@ -1856,3 +1856,589 @@ frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Se
     raise raise_exception(msg)
 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
 
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+15:29:39 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+15:29:40 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+15:38:15 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+15:38:15 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+15:40:34 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+15:40:34 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+16:08:16 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+16:08:17 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+16:08:48 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+16:08:48 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+/home/user/assignment/env/lib/python3.8/site-packages/jinja2/environment.py:1088: DeprecationWarning: 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+  return concat(self.root_render_func(self.new_context(vars)))
+16:19:06 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+16:19:06 Traceback (most recent call last):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/worker.py", line 1013, in perform_job
+    rv = job.perform()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 709, in perform
+    self._result = self._execute()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/rq/job.py", line 732, in _execute
+    result = self.func(*self.args, **self.kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/utils/background_jobs.py", line 104, in execute_job
+    method(**kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 539, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/user/assignment/apps/frappe/frappe/email/queue.py", line 76, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/user/assignment/apps/frappe/frappe/email/smtp.py", line 89, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 438, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable, wide=wide, as_list=as_list)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 417, in msgprint
+    _raise_exception()
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 371, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    self.run()
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3718, in run
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    pubsub.get_message(ignore_subscribe_messages=True,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3617, in get_message
+    response = self.parse_response(block=False, timeout=timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/client.py", line 3503, in parse_response
+    if not block and not conn.can_read(timeout=timeout):
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 734, in can_read
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+    return self._parser.can_read(timeout)
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 416, in can_read
+    return self.read_from_socket(timeout=timeout,
+  File "/home/user/assignment/env/lib/python3.8/site-packages/redis/connection.py", line 429, in read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
