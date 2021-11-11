@@ -589,3 +589,333 @@ Backup Summary for projectmanagement.sys at 2021-10-28 18:00:08.276349
 Config  : ./projectmanagement.sys/private/backups/20211028_180006-projectmanagement_sys-site_config_backup.json 183.0B
 Database: ./projectmanagement.sys/private/backups/20211028_180006-projectmanagement_sys-database.sql.gz         559.4KiB
 Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211029_120001-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-10-29 12:00:05.810559
+Config  : ./erpnextuse.case/private/backups/20211029_120001-erpnextuse_case-site_config_backup.json 158.0B
+Database: ./erpnextuse.case/private/backups/20211029_120001-erpnextuse_case-database.sql.gz         1.8MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211028_130829-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211028_120002-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211028_180006-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211028_134247-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211028_130829-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211028_180006-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211028_134247-projectmanagement_sys-database.sql.gz is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211029_120005-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-10-29 12:00:07.095712
+Config  : ./projectmanagement.sys/private/backups/20211029_120005-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211029_120005-projectmanagement_sys-database.sql.gz         564.2KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211029_180001-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-10-29 18:00:08.137528
+Config  : ./erpnextuse.case/private/backups/20211029_180001-erpnextuse_case-site_config_backup.json 225.0B
+Database: ./erpnextuse.case/private/backups/20211029_180001-erpnextuse_case-database.sql.gz         1.8MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211028_130829-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211029_120005-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211029_120005-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211028_180006-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211028_134247-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211028_180006-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211028_134247-projectmanagement_sys-database.sql.gz is older than 24 hours
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211029_180008-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-10-29 18:00:09.490748
+Config  : ./projectmanagement.sys/private/backups/20211029_180008-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211029_180008-projectmanagement_sys-database.sql.gz         581.3KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211101_120001-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-01 12:00:06.688754
+Config  : ./erpnextuse.case/private/backups/20211101_120001-erpnextuse_case-site_config_backup.json 225.0B
+Database: ./erpnextuse.case/private/backups/20211101_120001-erpnextuse_case-database.sql.gz         1.9MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211029_120005-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211029_120005-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211029_180008-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211028_180006-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211029_180008-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211028_180006-projectmanagement_sys-site_config_backup.json is older than 24 hours
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211101_120006-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-01 12:00:08.354544
+Config  : ./projectmanagement.sys/private/backups/20211101_120006-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211101_120006-projectmanagement_sys-database.sql.gz         590.0KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211101_180001-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-01 18:00:07.023716
+Config  : ./erpnextuse.case/private/backups/20211101_180001-erpnextuse_case-site_config_backup.json 225.0B
+Database: ./erpnextuse.case/private/backups/20211101_180001-erpnextuse_case-database.sql.gz         1.9MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211101_120006-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211101_120006-projectmanagement_sys-site_config_backup.json is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211101_180007-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-01 18:00:08.318528
+Config  : ./projectmanagement.sys/private/backups/20211101_180007-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211101_180007-projectmanagement_sys-database.sql.gz         598.6KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211102_120002-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-02 12:00:07.322745
+Config  : ./erpnextuse.case/private/backups/20211102_120002-erpnextuse_case-site_config_backup.json 225.0B
+Database: ./erpnextuse.case/private/backups/20211102_120002-erpnextuse_case-database.sql.gz         1.9MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211101_120006-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211101_120006-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211101_180007-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211101_180007-projectmanagement_sys-database.sql.gz is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211102_120007-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-02 12:00:09.045612
+Config  : ./projectmanagement.sys/private/backups/20211102_120007-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211102_120007-projectmanagement_sys-database.sql.gz         604.9KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211102_180002-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-02 18:00:07.733766
+Config  : ./erpnextuse.case/private/backups/20211102_180002-erpnextuse_case-site_config_backup.json 225.0B
+Database: ./erpnextuse.case/private/backups/20211102_180002-erpnextuse_case-database.sql.gz         2.0MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211101_120006-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211101_120006-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211101_180007-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211101_180007-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211102_120007-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211102_120007-projectmanagement_sys-site_config_backup.json is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211102_180007-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-02 18:00:09.377352
+Config  : ./projectmanagement.sys/private/backups/20211102_180007-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211102_180007-projectmanagement_sys-database.sql.gz         612.5KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211103_120002-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-03 12:00:06.606498
+Config  : ./erpnextuse.case/private/backups/20211103_120002-erpnextuse_case-site_config_backup.json 225.0B
+Database: ./erpnextuse.case/private/backups/20211103_120002-erpnextuse_case-database.sql.gz         2.0MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211101_180007-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211101_180007-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211102_120007-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211102_180007-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211102_120007-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211102_180007-projectmanagement_sys-site_config_backup.json is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211103_120006-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-03 12:00:08.162835
+Config  : ./projectmanagement.sys/private/backups/20211103_120006-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211103_120006-projectmanagement_sys-database.sql.gz         619.1KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211103_180002-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-03 18:00:06.654800
+Config  : ./erpnextuse.case/private/backups/20211103_180002-erpnextuse_case-site_config_backup.json 225.0B
+Database: ./erpnextuse.case/private/backups/20211103_180002-erpnextuse_case-database.sql.gz         2.1MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211102_120007-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211102_180007-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211103_120006-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211103_120006-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211102_120007-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211102_180007-projectmanagement_sys-site_config_backup.json is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211103_180006-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-03 18:00:07.968545
+Config  : ./projectmanagement.sys/private/backups/20211103_180006-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211103_180006-projectmanagement_sys-database.sql.gz         627.5KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211104_120148-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-04 12:01:58.187657
+Config  : ./erpnextuse.case/private/backups/20211104_120148-erpnextuse_case-site_config_backup.json 225.0B
+Database: ./erpnextuse.case/private/backups/20211104_120148-erpnextuse_case-database.sql.gz         2.1MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211103_180006-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211103_180006-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211102_180007-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211103_120006-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211103_120006-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211102_180007-projectmanagement_sys-site_config_backup.json is older than 24 hours
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211104_120158-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-04 12:02:00.088969
+Config  : ./projectmanagement.sys/private/backups/20211104_120158-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211104_120158-projectmanagement_sys-database.sql.gz         633.8KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211104_180001-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-04 18:00:08.105799
+Config  : ./erpnextuse.case/private/backups/20211104_180001-erpnextuse_case-site_config_backup.json 248.0B
+Database: ./erpnextuse.case/private/backups/20211104_180001-erpnextuse_case-database.sql.gz         2.1MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211103_180006-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211103_180006-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211104_120158-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211104_120158-projectmanagement_sys-site_config_backup.json is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211104_180008-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-04 18:00:10.623250
+Config  : ./projectmanagement.sys/private/backups/20211104_180008-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211104_180008-projectmanagement_sys-database.sql.gz         641.0KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211108_120002-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-08 12:00:08.381779
+Config  : ./erpnextuse.case/private/backups/20211108_120002-erpnextuse_case-site_config_backup.json 248.0B
+Database: ./erpnextuse.case/private/backups/20211108_120002-erpnextuse_case-database.sql.gz         2.1MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211104_180008-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211104_180008-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211104_120158-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211104_120158-projectmanagement_sys-site_config_backup.json is older than 24 hours
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211108_120008-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-08 12:00:09.542100
+Config  : ./projectmanagement.sys/private/backups/20211108_120008-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211108_120008-projectmanagement_sys-database.sql.gz         643.3KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211108_180002-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-08 18:00:10.395060
+Config  : ./erpnextuse.case/private/backups/20211108_180002-erpnextuse_case-site_config_backup.json 248.0B
+Database: ./erpnextuse.case/private/backups/20211108_180002-erpnextuse_case-database.sql.gz         2.1MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211108_120008-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211108_120008-projectmanagement_sys-site_config_backup.json is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211108_180010-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-08 18:00:14.066400
+Config  : ./projectmanagement.sys/private/backups/20211108_180010-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211108_180010-projectmanagement_sys-database.sql.gz         646.1KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211109_000003-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-09 00:00:08.921582
+Config  : ./erpnextuse.case/private/backups/20211109_000003-erpnextuse_case-site_config_backup.json 248.0B
+Database: ./erpnextuse.case/private/backups/20211109_000003-erpnextuse_case-database.sql.gz         2.2MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211108_180010-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211108_120008-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211108_120008-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211108_180010-projectmanagement_sys-site_config_backup.json is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211109_000008-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-09 00:00:10.544147
+Config  : ./projectmanagement.sys/private/backups/20211109_000008-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211109_000008-projectmanagement_sys-database.sql.gz         646.1KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211109_120002-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-09 12:00:09.309140
+Config  : ./erpnextuse.case/private/backups/20211109_120002-erpnextuse_case-site_config_backup.json 248.0B
+Database: ./erpnextuse.case/private/backups/20211109_120002-erpnextuse_case-database.sql.gz         2.2MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211108_180010-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211108_120008-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211109_000008-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211109_000008-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211108_120008-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211108_180010-projectmanagement_sys-site_config_backup.json is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211109_120009-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-09 12:00:10.493019
+Config  : ./projectmanagement.sys/private/backups/20211109_120009-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211109_120009-projectmanagement_sys-database.sql.gz         646.1KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211109_180001-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-09 18:00:06.915865
+Config  : ./erpnextuse.case/private/backups/20211109_180001-erpnextuse_case-site_config_backup.json 248.0B
+Database: ./erpnextuse.case/private/backups/20211109_180001-erpnextuse_case-database.sql.gz         2.2MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211108_180010-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211109_120009-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211109_120009-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211109_000008-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211109_000008-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211108_120008-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211108_180010-projectmanagement_sys-site_config_backup.json is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211109_180006-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-09 18:00:08.481801
+Config  : ./projectmanagement.sys/private/backups/20211109_180006-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211109_180006-projectmanagement_sys-database.sql.gz         648.3KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211110_120003-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-10 12:00:09.954346
+Config  : ./erpnextuse.case/private/backups/20211110_120003-erpnextuse_case-site_config_backup.json 248.0B
+Database: ./erpnextuse.case/private/backups/20211110_120003-erpnextuse_case-database.sql.gz         2.2MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211109_120009-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211109_120009-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211109_180006-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211109_180006-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211109_000008-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211109_000008-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211108_180010-projectmanagement_sys-site_config_backup.json is older than 24 hours
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211110_120009-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-10 12:00:12.568235
+Config  : ./projectmanagement.sys/private/backups/20211110_120009-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211110_120009-projectmanagement_sys-database.sql.gz         656.4KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211110_180002-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-10 18:00:07.724885
+Config  : ./erpnextuse.case/private/backups/20211110_180002-erpnextuse_case-site_config_backup.json 248.0B
+Database: ./erpnextuse.case/private/backups/20211110_180002-erpnextuse_case-database.sql.gz         2.2MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211109_120009-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211109_120009-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211109_180006-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211109_180006-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211110_120009-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211110_120009-projectmanagement_sys-site_config_backup.json is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211110_180007-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-10 18:00:09.370887
+Config  : ./projectmanagement.sys/private/backups/20211110_180007-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211110_180007-projectmanagement_sys-database.sql.gz         675.4KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211111_120002-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-11 12:00:07.069320
+Config  : ./erpnextuse.case/private/backups/20211111_120002-erpnextuse_case-site_config_backup.json 248.0B
+Database: ./erpnextuse.case/private/backups/20211111_120002-erpnextuse_case-database.sql.gz         2.2MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211110_180007-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211109_180006-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211109_180006-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211110_180007-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211110_120009-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211110_120009-projectmanagement_sys-site_config_backup.json is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211111_120007-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-11 12:00:09.064002
+Config  : ./projectmanagement.sys/private/backups/20211111_120007-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211111_120007-projectmanagement_sys-database.sql.gz         680.4KiB
+Backup for Site projectmanagement.sys has been successfully completed
+mysqldump --single-transaction --quick --lock-tables=false -u _9611fd7325c81611 -piUYrIZtMH2MUUo1w _9611fd7325c81611 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./erpnextuse.case/private/backups/20211111_180001-erpnextuse_case-database.sql.gz
+
+Backup Summary for erpnextuse.case at 2021-11-11 18:00:06.152400
+Config  : ./erpnextuse.case/private/backups/20211111_180001-erpnextuse_case-site_config_backup.json 248.0B
+Database: ./erpnextuse.case/private/backups/20211111_180001-erpnextuse_case-database.sql.gz         2.3MiB
+Backup for Site erpnextuse.case has been successfully completed
+File ./projectmanagement.sys/private/backups/20211110_180007-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211111_120007-projectmanagement_sys-site_config_backup.json is recent
+File ./projectmanagement.sys/private/backups/20211110_180007-projectmanagement_sys-database.sql.gz is recent
+File ./projectmanagement.sys/private/backups/20211110_120009-projectmanagement_sys-database.sql.gz is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211110_120009-projectmanagement_sys-site_config_backup.json is older than 24 hours
+File ./projectmanagement.sys/private/backups/20211111_120007-projectmanagement_sys-database.sql.gz is recent
+mysqldump --single-transaction --quick --lock-tables=false -u _d7b2a4261c302107 -pC541lZ1J9x11RpHI _d7b2a4261c302107 -h 127.0.0.1 -P 3306   | /usr/bin/gzip >> ./projectmanagement.sys/private/backups/20211111_180006-projectmanagement_sys-database.sql.gz
+
+Backup Summary for projectmanagement.sys at 2021-11-11 18:00:07.835317
+Config  : ./projectmanagement.sys/private/backups/20211111_180006-projectmanagement_sys-site_config_backup.json 183.0B
+Database: ./projectmanagement.sys/private/backups/20211111_180006-projectmanagement_sys-database.sql.gz         688.0KiB
+Backup for Site projectmanagement.sys has been successfully completed

@@ -1,735 +1,169 @@
-2021-10-28 17:00:32,512 INFO scheduler Scheduled Job Complete: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for erpnextuse.case
-2021-10-28 17:00:32,606 INFO scheduler Scheduled Job Start: erpnext.support.doctype.issue.issue.set_service_level_agreement_variance for erpnextuse.case
-2021-10-28 17:00:33,007 INFO scheduler Scheduled Job Complete: erpnext.support.doctype.issue.issue.set_service_level_agreement_variance for erpnextuse.case
-2021-10-28 17:00:33,089 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for erpnextuse.case
-2021-10-28 17:00:33,482 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for erpnextuse.case
-2021-10-28 17:00:33,570 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.collect_project_status for erpnextuse.case
-2021-10-28 17:00:33,995 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.collect_project_status for erpnextuse.case
-2021-10-28 17:00:34,082 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.hourly_reminder for erpnextuse.case
-2021-10-28 17:00:34,459 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.hourly_reminder for erpnextuse.case
-2021-10-28 17:00:34,549 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization for erpnextuse.case
-2021-10-28 17:00:34,960 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization for erpnextuse.case
-2021-10-28 17:00:35,053 INFO scheduler Scheduled Job Start: erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs for erpnextuse.case
-2021-10-28 17:00:35,406 INFO scheduler Scheduled Job Complete: erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs for erpnextuse.case
-2021-10-28 17:00:35,494 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details for erpnextuse.case
-2021-10-28 17:00:35,815 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details for erpnextuse.case
-2021-10-28 17:00:35,911 INFO scheduler Scheduled Job Start: erpnext.accounts.doctype.subscription.subscription.process_all for erpnextuse.case
-2021-10-28 17:00:36,226 INFO scheduler Scheduled Job Complete: erpnext.accounts.doctype.subscription.subscription.process_all for erpnextuse.case
-2021-10-28 17:00:36,326 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails for erpnextuse.case
-2021-10-28 17:00:36,632 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails for erpnextuse.case
-2021-10-28 17:00:36,712 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:00:36,949 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:00:37,021 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:00:37,321 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:00:37,397 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:00:37,589 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:00:37,668 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:00:37,984 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:00:38,074 INFO scheduler Scheduled Job Start: erpnext.utilities.doctype.video.video.update_youtube_data for erpnextuse.case
-2021-10-28 17:00:38,538 INFO scheduler Scheduled Job Failed: erpnext.utilities.doctype.video.video.update_youtube_data for erpnextuse.case
-2021-10-28 17:00:38,625 INFO scheduler Scheduled Job Start: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for erpnextuse.case
-2021-10-28 17:00:38,972 INFO scheduler Scheduled Job Complete: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for erpnextuse.case
-2021-10-28 17:00:39,058 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync for erpnextuse.case
-2021-10-28 17:00:39,553 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync for erpnextuse.case
-2021-10-28 17:00:39,633 INFO scheduler Scheduled Job Start: frappe.desk.form.document_follow.send_hourly_updates for erpnextuse.case
-2021-10-28 17:00:39,980 INFO scheduler Scheduled Job Complete: frappe.desk.form.document_follow.send_hourly_updates for erpnextuse.case
-2021-10-28 17:00:40,064 INFO scheduler Scheduled Job Start: frappe.deferred_insert.save_to_db for erpnextuse.case
-2021-10-28 17:00:40,862 INFO scheduler Scheduled Job Complete: frappe.deferred_insert.save_to_db for erpnextuse.case
-2021-10-28 17:00:40,964 INFO scheduler Scheduled Job Start: frappe.desk.page.backups.backups.delete_downloadable_backups for erpnextuse.case
-2021-10-28 17:00:41,281 INFO scheduler Scheduled Job Complete: frappe.desk.page.backups.backups.delete_downloadable_backups for erpnextuse.case
-2021-10-28 17:00:41,368 INFO scheduler Scheduled Job Start: frappe.utils.error.collect_error_snapshots for erpnextuse.case
-2021-10-28 17:00:41,680 INFO scheduler Scheduled Job Complete: frappe.utils.error.collect_error_snapshots for erpnextuse.case
-2021-10-28 17:00:41,774 INFO scheduler Scheduled Job Start: frappe.model.utils.user_settings.sync_user_settings for erpnextuse.case
-2021-10-28 17:00:42,047 INFO scheduler Scheduled Job Complete: frappe.model.utils.user_settings.sync_user_settings for erpnextuse.case
-2021-10-28 17:00:42,141 INFO scheduler Scheduled Job Start: frappe.model.utils.link_count.update_link_count for erpnextuse.case
-2021-10-28 17:00:42,380 INFO scheduler Scheduled Job Complete: frappe.model.utils.link_count.update_link_count for erpnextuse.case
-2021-10-28 17:00:42,461 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:00:42,694 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:00:42,810 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:00:42,996 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:00:43,074 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:00:43,369 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:00:43,445 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:00:43,718 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:00:43,802 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:00:44,051 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:00:44,134 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:00:44,373 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:00:44,464 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
-2021-10-28 17:00:44,739 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
-2021-10-28 17:00:44,832 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
-2021-10-28 17:00:45,221 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
-2021-10-28 17:00:45,308 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for erpnextuse.case
-2021-10-28 17:00:45,617 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for erpnextuse.case
-2021-10-28 17:00:45,705 INFO scheduler Scheduled Job Start: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for projectmanagement.sys
-2021-10-28 17:00:46,088 INFO scheduler Scheduled Job Complete: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for projectmanagement.sys
-2021-10-28 17:00:46,172 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync for projectmanagement.sys
-2021-10-28 17:00:46,676 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync for projectmanagement.sys
-2021-10-28 17:00:46,763 INFO scheduler Scheduled Job Start: frappe.desk.form.document_follow.send_hourly_updates for projectmanagement.sys
-2021-10-28 17:00:47,141 INFO scheduler Scheduled Job Complete: frappe.desk.form.document_follow.send_hourly_updates for projectmanagement.sys
-2021-10-28 17:00:47,231 INFO scheduler Scheduled Job Start: frappe.deferred_insert.save_to_db for projectmanagement.sys
-2021-10-28 17:00:47,553 INFO scheduler Scheduled Job Complete: frappe.deferred_insert.save_to_db for projectmanagement.sys
-2021-10-28 17:00:47,662 INFO scheduler Scheduled Job Start: frappe.desk.page.backups.backups.delete_downloadable_backups for projectmanagement.sys
-2021-10-28 17:00:48,054 INFO scheduler Scheduled Job Complete: frappe.desk.page.backups.backups.delete_downloadable_backups for projectmanagement.sys
-2021-10-28 17:00:48,139 INFO scheduler Scheduled Job Start: frappe.utils.error.collect_error_snapshots for projectmanagement.sys
-2021-10-28 17:00:48,493 INFO scheduler Scheduled Job Complete: frappe.utils.error.collect_error_snapshots for projectmanagement.sys
-2021-10-28 17:00:48,581 INFO scheduler Scheduled Job Start: frappe.model.utils.user_settings.sync_user_settings for projectmanagement.sys
-2021-10-28 17:00:48,895 INFO scheduler Scheduled Job Complete: frappe.model.utils.user_settings.sync_user_settings for projectmanagement.sys
-2021-10-28 17:00:48,978 INFO scheduler Scheduled Job Start: frappe.model.utils.link_count.update_link_count for projectmanagement.sys
-2021-10-28 17:00:49,282 INFO scheduler Scheduled Job Complete: frappe.model.utils.link_count.update_link_count for projectmanagement.sys
-2021-10-28 17:00:49,405 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:00:49,606 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:00:49,687 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:00:49,872 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:00:49,964 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:00:50,351 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:00:50,439 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:00:50,710 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:00:50,790 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:00:51,132 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:00:51,214 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:00:51,419 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:00:51,515 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-28 17:00:51,941 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-28 17:00:52,025 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-28 17:00:52,486 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-28 17:00:52,572 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-28 17:00:52,932 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-28 17:04:34,288 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:04:34,607 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:04:34,686 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:04:34,926 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:04:35,002 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:04:35,242 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:04:35,333 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:04:35,665 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:04:35,748 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:04:35,944 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:04:36,028 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:04:36,202 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:04:36,285 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:04:36,691 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:04:36,773 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:04:37,059 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:04:37,134 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:04:37,436 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:04:37,525 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:04:37,755 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:04:37,835 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:04:38,029 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:04:38,113 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:04:38,298 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:04:38,387 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:04:38,765 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:04:38,850 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:04:39,128 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:04:39,213 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:04:39,559 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:04:39,643 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:04:39,871 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:08:36,083 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:08:36,377 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:08:36,454 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:08:36,669 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:08:36,746 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:08:37,015 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:08:37,113 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:08:37,420 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:08:37,497 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:08:37,745 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:08:37,824 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:08:38,053 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:08:38,158 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:08:38,523 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:08:38,603 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:08:38,889 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:08:38,976 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:08:39,278 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:08:39,393 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:08:39,599 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:08:39,678 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:08:39,907 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:08:39,993 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:08:40,245 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:08:40,377 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:08:40,799 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:08:40,916 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:08:41,361 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:08:41,461 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:08:41,841 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:08:41,935 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:08:42,278 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:12:38,250 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:12:38,691 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:12:38,772 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:12:39,071 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:12:39,155 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:12:39,470 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:12:39,568 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:12:39,879 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:12:39,954 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:12:40,191 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:12:40,285 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:12:40,515 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:12:40,603 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:12:40,916 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:12:41,005 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:12:41,254 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:12:41,361 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:12:41,827 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:12:41,984 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:12:42,326 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:12:42,417 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:12:42,735 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:12:42,827 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:12:43,055 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:12:43,164 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:12:43,555 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:12:43,639 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:12:43,929 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:12:44,008 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:12:44,285 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:12:44,369 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:12:44,740 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:34:35,930 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:34:36,106 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:34:36,726 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:34:36,882 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:34:37,102 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:34:37,422 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:34:37,555 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:34:38,125 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:34:38,271 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:34:38,912 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:34:39,046 INFO scheduler Scheduled Job Start: erpnext.utilities.doctype.video.video.update_youtube_data for erpnextuse.case
-2021-10-28 17:34:39,878 INFO scheduler Scheduled Job Complete: erpnext.utilities.doctype.video.video.update_youtube_data for erpnextuse.case
-2021-10-28 17:34:40,017 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:34:40,315 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:34:40,427 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:34:40,709 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:34:40,839 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:34:41,412 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:34:41,535 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:34:41,981 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:34:42,101 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:34:42,430 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:34:42,518 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:34:42,765 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:34:42,847 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
-2021-10-28 17:34:43,153 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
-2021-10-28 17:34:43,295 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
-2021-10-28 17:34:43,886 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
-2021-10-28 17:34:43,995 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for erpnextuse.case
-2021-10-28 17:34:44,341 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for erpnextuse.case
-2021-10-28 17:34:44,437 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:34:45,009 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:34:45,114 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:34:45,348 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:34:45,423 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:34:45,789 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:34:45,867 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:34:46,175 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:34:46,251 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:34:46,607 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:34:46,693 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:34:46,899 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:34:46,982 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-28 17:34:47,471 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-28 17:34:47,551 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-28 17:34:47,928 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-28 17:34:48,011 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-28 17:34:48,375 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-28 17:35:37,361 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:35:37,487 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:36:37,775 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:36:37,831 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:36:38,024 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:36:38,025 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:36:38,104 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:36:38,322 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:36:38,405 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:36:38,604 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:36:38,680 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:36:38,967 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:36:39,045 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:36:39,227 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:36:39,301 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:36:39,472 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:36:39,549 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:36:39,874 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:36:39,961 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:36:40,205 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:36:40,296 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:36:40,538 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:36:40,608 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:36:40,798 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:36:40,884 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:36:41,059 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:36:41,135 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:36:41,309 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:36:41,384 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:36:41,682 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:36:41,767 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:36:42,008 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:36:42,088 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:36:42,337 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:36:42,413 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:36:42,604 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:37:38,293 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:37:38,418 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:38:38,683 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:38:38,808 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:39:39,082 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:39:39,213 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:40:39,484 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:40:39,561 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:40:39,729 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:40:39,741 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:40:39,817 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:40:40,014 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:40:40,083 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:40:40,267 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:40:40,341 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:40:40,606 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:40:40,689 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:40:40,856 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:40:40,936 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:40:41,123 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:40:41,196 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:40:41,477 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:40:41,553 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:40:41,798 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:40:41,875 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:40:42,115 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:40:42,190 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:40:42,383 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:40:42,457 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:40:42,631 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:40:42,704 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:40:42,875 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:40:42,953 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:40:43,247 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:40:43,326 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:40:43,547 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:40:43,626 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:40:43,873 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:40:43,952 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:40:44,134 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:41:39,993 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:41:40,120 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:42:40,443 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:42:40,626 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:43:40,875 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:43:41,005 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:44:41,275 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:44:41,342 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:44:41,524 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:44:41,534 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:44:41,597 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:44:41,801 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:44:41,881 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:44:42,073 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:44:42,146 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:44:42,429 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:44:42,501 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:44:42,678 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:44:42,751 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:44:42,924 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:44:42,998 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:44:43,295 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:44:43,379 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:44:43,610 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:44:43,684 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:44:43,943 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:44:44,019 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:44:44,219 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:44:44,296 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:44:44,478 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:44:44,557 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:44:44,722 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:44:44,796 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:44:45,076 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:44:45,154 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:44:45,393 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:44:45,465 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:44:45,733 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:44:45,808 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:44:45,998 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:45:41,794 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:45:41,858 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
-2021-10-28 17:45:41,941 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:45:42,121 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
-2021-10-28 17:45:42,196 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
-2021-10-28 17:45:42,482 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
-2021-10-28 17:45:42,563 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for erpnextuse.case
-2021-10-28 17:45:42,820 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for erpnextuse.case
-2021-10-28 17:45:42,902 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-28 17:45:43,209 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-28 17:45:43,291 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-28 17:45:43,630 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-28 17:45:43,712 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-28 17:45:44,013 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-28 17:46:42,221 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:46:42,363 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:47:42,658 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:47:42,797 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:48:43,046 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:48:43,101 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:48:43,312 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:48:43,315 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:48:43,387 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:48:43,584 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:48:43,659 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:48:43,833 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:48:43,905 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:48:44,162 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:48:44,233 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:48:44,399 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:48:44,473 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:48:44,638 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:48:44,714 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:48:44,998 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:48:45,070 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:48:45,289 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:48:45,361 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:48:45,593 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:48:45,675 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:48:45,850 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:48:45,921 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:48:46,092 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:48:46,172 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:48:46,343 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:48:46,419 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:48:46,702 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:48:46,780 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:48:47,028 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:48:47,102 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:48:47,357 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:48:47,433 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:48:47,615 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:49:43,563 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:49:43,687 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:50:43,962 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:50:44,092 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:51:44,397 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:51:44,538 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:52:44,849 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:52:44,910 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:52:45,115 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:52:45,121 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:52:45,195 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:52:45,394 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:52:45,466 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:52:45,654 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:52:45,733 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:52:46,063 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:52:46,142 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:52:46,317 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:52:46,399 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:52:46,574 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:52:46,679 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:52:46,982 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:52:47,059 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:52:47,295 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:52:47,374 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:52:47,606 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:52:47,681 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:52:47,950 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:52:48,025 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:52:48,210 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:52:48,292 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:52:48,465 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:52:48,541 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:52:48,911 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:52:48,988 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:52:49,236 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:52:49,312 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:52:49,578 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:52:49,653 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:52:49,847 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:53:45,371 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:53:45,510 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:54:45,765 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:54:45,914 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:55:46,195 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:55:46,335 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:56:46,639 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:56:46,723 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:56:46,963 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:56:47,016 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 17:56:47,101 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:56:47,306 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 17:56:47,380 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:56:47,571 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 17:56:47,656 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:56:48,027 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 17:56:48,107 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:56:48,286 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 17:56:48,359 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:56:48,575 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 17:56:48,682 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:56:49,016 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 17:56:49,092 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:56:49,314 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 17:56:49,385 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:56:49,614 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 17:56:49,691 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:56:49,877 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 17:56:49,966 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:56:50,133 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 17:56:50,211 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:56:50,432 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 17:56:50,519 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:56:50,828 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 17:56:50,900 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:56:51,187 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 17:56:51,320 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:56:51,681 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 17:56:51,770 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:56:51,958 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 17:57:47,240 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:57:47,397 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:58:47,677 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:58:47,876 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 17:59:48,118 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 17:59:48,235 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:00:48,426 INFO scheduler Scheduled Job Start: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for erpnextuse.case
-2021-10-28 18:00:48,509 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.connectors.shopify_connection.sync_old_orders for erpnextuse.case
-2021-10-28 18:00:48,908 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:00:49,077 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.connectors.shopify_connection.sync_old_orders for erpnextuse.case
-2021-10-28 18:00:49,143 INFO scheduler Scheduled Job Complete: erpnext.stock.doctype.repost_item_valuation.repost_item_valuation.repost_entries for erpnextuse.case
-2021-10-28 18:00:49,197 INFO scheduler Scheduled Job Start: erpnext.support.doctype.issue.issue.set_service_level_agreement_variance for erpnextuse.case
-2021-10-28 18:00:49,357 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:00:49,578 INFO scheduler Scheduled Job Complete: erpnext.support.doctype.issue.issue.set_service_level_agreement_variance for erpnextuse.case
-2021-10-28 18:00:49,684 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for erpnextuse.case
-2021-10-28 18:00:50,080 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts for erpnextuse.case
-2021-10-28 18:00:50,158 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.collect_project_status for erpnextuse.case
-2021-10-28 18:00:50,481 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.collect_project_status for erpnextuse.case
-2021-10-28 18:00:50,564 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.hourly_reminder for erpnextuse.case
-2021-10-28 18:00:50,875 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.hourly_reminder for erpnextuse.case
-2021-10-28 18:00:50,954 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization for erpnextuse.case
-2021-10-28 18:00:51,336 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization for erpnextuse.case
-2021-10-28 18:00:51,423 INFO scheduler Scheduled Job Start: erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs for erpnextuse.case
-2021-10-28 18:00:51,762 INFO scheduler Scheduled Job Complete: erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs for erpnextuse.case
-2021-10-28 18:00:51,838 INFO scheduler Scheduled Job Start: erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details for erpnextuse.case
-2021-10-28 18:00:52,112 INFO scheduler Scheduled Job Complete: erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details for erpnextuse.case
-2021-10-28 18:00:52,194 INFO scheduler Scheduled Job Start: erpnext.accounts.doctype.subscription.subscription.process_all for erpnextuse.case
-2021-10-28 18:00:52,469 INFO scheduler Scheduled Job Complete: erpnext.accounts.doctype.subscription.subscription.process_all for erpnextuse.case
-2021-10-28 18:00:52,549 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails for erpnextuse.case
-2021-10-28 18:00:52,822 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails for erpnextuse.case
-2021-10-28 18:00:52,901 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 18:00:53,098 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 18:00:53,174 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 18:00:53,376 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 18:00:53,449 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 18:00:53,632 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 18:00:53,705 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 18:00:53,966 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 18:00:54,039 INFO scheduler Scheduled Job Start: erpnext.utilities.doctype.video.video.update_youtube_data for erpnextuse.case
-2021-10-28 18:00:54,417 INFO scheduler Scheduled Job Failed: erpnext.utilities.doctype.video.video.update_youtube_data for erpnextuse.case
-2021-10-28 18:00:54,507 INFO scheduler Scheduled Job Start: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for erpnextuse.case
-2021-10-28 18:00:54,826 INFO scheduler Scheduled Job Complete: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for erpnextuse.case
-2021-10-28 18:00:54,909 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync for erpnextuse.case
-2021-10-28 18:00:55,389 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync for erpnextuse.case
-2021-10-28 18:00:55,474 INFO scheduler Scheduled Job Start: frappe.desk.form.document_follow.send_hourly_updates for erpnextuse.case
-2021-10-28 18:00:55,762 INFO scheduler Scheduled Job Complete: frappe.desk.form.document_follow.send_hourly_updates for erpnextuse.case
-2021-10-28 18:00:55,850 INFO scheduler Scheduled Job Start: frappe.deferred_insert.save_to_db for erpnextuse.case
-2021-10-28 18:00:56,207 INFO scheduler Scheduled Job Complete: frappe.deferred_insert.save_to_db for erpnextuse.case
-2021-10-28 18:00:56,292 INFO scheduler Scheduled Job Start: frappe.desk.page.backups.backups.delete_downloadable_backups for erpnextuse.case
-2021-10-28 18:00:56,537 INFO scheduler Scheduled Job Complete: frappe.desk.page.backups.backups.delete_downloadable_backups for erpnextuse.case
-2021-10-28 18:00:56,627 INFO scheduler Scheduled Job Start: frappe.utils.error.collect_error_snapshots for erpnextuse.case
-2021-10-28 18:00:56,888 INFO scheduler Scheduled Job Complete: frappe.utils.error.collect_error_snapshots for erpnextuse.case
-2021-10-28 18:00:56,976 INFO scheduler Scheduled Job Start: frappe.model.utils.user_settings.sync_user_settings for erpnextuse.case
-2021-10-28 18:00:57,235 INFO scheduler Scheduled Job Complete: frappe.model.utils.user_settings.sync_user_settings for erpnextuse.case
-2021-10-28 18:00:57,325 INFO scheduler Scheduled Job Start: frappe.model.utils.link_count.update_link_count for erpnextuse.case
-2021-10-28 18:00:57,571 INFO scheduler Scheduled Job Complete: frappe.model.utils.link_count.update_link_count for erpnextuse.case
-2021-10-28 18:00:57,658 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 18:00:57,833 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 18:00:57,939 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 18:00:58,125 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 18:00:58,224 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 18:00:58,545 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 18:00:58,622 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 18:00:58,844 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 18:00:58,919 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 18:00:59,183 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 18:00:59,269 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 18:00:59,474 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 18:00:59,555 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
-2021-10-28 18:00:59,849 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
-2021-10-28 18:00:59,958 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
-2021-10-28 18:01:00,385 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
-2021-10-28 18:01:00,464 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for erpnextuse.case
-2021-10-28 18:01:00,736 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for erpnextuse.case
-2021-10-28 18:01:00,833 INFO scheduler Scheduled Job Start: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for projectmanagement.sys
-2021-10-28 18:01:01,427 INFO scheduler Scheduled Job Complete: frappe.email.doctype.newsletter.newsletter.send_scheduled_email for projectmanagement.sys
-2021-10-28 18:01:01,518 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.google_calendar.google_calendar.sync for projectmanagement.sys
-2021-10-28 18:01:01,996 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.google_calendar.google_calendar.sync for projectmanagement.sys
-2021-10-28 18:01:02,080 INFO scheduler Scheduled Job Start: frappe.desk.form.document_follow.send_hourly_updates for projectmanagement.sys
-2021-10-28 18:01:02,391 INFO scheduler Scheduled Job Complete: frappe.desk.form.document_follow.send_hourly_updates for projectmanagement.sys
-2021-10-28 18:01:02,475 INFO scheduler Scheduled Job Start: frappe.deferred_insert.save_to_db for projectmanagement.sys
-2021-10-28 18:01:02,769 INFO scheduler Scheduled Job Complete: frappe.deferred_insert.save_to_db for projectmanagement.sys
-2021-10-28 18:01:02,850 INFO scheduler Scheduled Job Start: frappe.desk.page.backups.backups.delete_downloadable_backups for projectmanagement.sys
-2021-10-28 18:01:03,141 INFO scheduler Scheduled Job Complete: frappe.desk.page.backups.backups.delete_downloadable_backups for projectmanagement.sys
-2021-10-28 18:01:03,226 INFO scheduler Scheduled Job Start: frappe.utils.error.collect_error_snapshots for projectmanagement.sys
-2021-10-28 18:01:03,614 INFO scheduler Scheduled Job Complete: frappe.utils.error.collect_error_snapshots for projectmanagement.sys
-2021-10-28 18:01:03,738 INFO scheduler Scheduled Job Start: frappe.model.utils.user_settings.sync_user_settings for projectmanagement.sys
-2021-10-28 18:01:04,038 INFO scheduler Scheduled Job Complete: frappe.model.utils.user_settings.sync_user_settings for projectmanagement.sys
-2021-10-28 18:01:04,134 INFO scheduler Scheduled Job Start: frappe.model.utils.link_count.update_link_count for projectmanagement.sys
-2021-10-28 18:01:04,447 INFO scheduler Scheduled Job Complete: frappe.model.utils.link_count.update_link_count for projectmanagement.sys
-2021-10-28 18:01:04,550 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 18:01:04,750 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 18:01:04,838 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 18:01:05,031 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 18:01:05,120 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 18:01:05,432 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 18:01:05,506 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 18:01:05,751 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 18:01:05,831 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 18:01:06,160 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 18:01:06,258 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 18:01:06,469 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 18:01:06,545 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-28 18:01:06,846 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-28 18:01:06,929 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-28 18:01:07,323 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-28 18:01:07,413 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-28 18:01:07,719 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-28 18:01:49,621 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:01:49,752 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:02:50,014 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:02:50,142 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:03:50,396 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:03:50,522 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:04:50,774 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 18:04:50,830 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:04:51,025 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 18:04:51,031 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:04:51,103 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 18:04:51,299 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 18:04:51,372 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 18:04:51,550 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 18:04:51,624 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 18:04:51,886 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 18:04:51,964 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 18:04:52,130 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 18:04:52,203 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 18:04:52,373 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 18:04:52,447 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 18:04:52,731 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 18:04:52,802 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 18:04:53,016 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 18:04:53,090 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 18:04:53,331 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 18:04:53,402 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 18:04:53,583 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 18:04:53,661 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 18:04:53,826 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 18:04:53,900 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 18:04:54,071 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 18:04:54,151 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 18:04:54,442 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 18:04:54,516 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 18:04:54,749 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 18:04:54,827 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 18:04:55,079 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 18:04:55,160 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 18:04:55,342 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 18:05:51,286 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:05:51,411 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:06:51,664 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:06:51,789 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:07:52,051 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:07:52,177 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:08:52,442 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 18:08:52,507 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:08:52,764 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:08:52,774 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 18:08:52,874 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 18:08:53,084 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 18:08:53,158 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 18:08:53,333 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 18:08:53,412 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 18:08:53,671 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 18:08:53,744 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 18:08:53,911 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 18:08:53,988 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 18:08:54,155 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 18:08:54,229 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 18:08:54,507 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 18:08:54,580 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 18:08:54,802 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 18:08:54,875 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 18:08:55,107 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 18:08:55,184 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 18:08:55,365 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 18:08:55,440 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 18:08:55,611 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 18:08:55,697 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 18:08:55,865 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 18:08:55,941 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 18:08:56,229 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 18:08:56,308 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 18:08:56,532 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 18:08:56,607 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 18:08:56,845 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 18:08:56,916 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 18:08:57,103 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 18:09:53,020 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:09:53,144 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:10:53,406 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:10:53,528 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:11:53,808 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:11:53,951 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:12:54,254 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 18:12:54,323 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:12:54,533 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
-2021-10-28 18:12:54,557 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:12:54,618 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 18:12:54,837 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
-2021-10-28 18:12:54,913 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 18:12:55,109 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
-2021-10-28 18:12:55,198 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 18:12:55,575 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
-2021-10-28 18:12:55,724 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
-2021-10-28 18:12:55,976 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
-2021-10-28 18:12:56,091 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 18:12:56,382 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
-2021-10-28 18:12:56,469 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 18:12:56,791 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
-2021-10-28 18:12:56,870 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 18:12:57,122 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
-2021-10-28 18:12:57,196 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 18:12:57,476 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
-2021-10-28 18:12:57,574 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 18:12:57,840 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
-2021-10-28 18:12:57,929 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 18:12:58,109 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
-2021-10-28 18:12:58,189 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 18:12:58,418 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
-2021-10-28 18:12:58,501 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 18:12:58,809 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
-2021-10-28 18:12:58,957 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 18:12:59,271 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
-2021-10-28 18:12:59,355 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 18:12:59,685 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
-2021-10-28 18:12:59,830 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 18:13:00,119 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
-2021-10-28 18:13:54,894 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:13:55,027 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:14:55,304 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:14:55,447 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:15:55,707 DEBUG scheduler Queued events for site erpnextuse.case
-2021-10-28 18:15:55,774 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
-2021-10-28 18:15:55,891 DEBUG scheduler Queued events for site projectmanagement.sys
-2021-10-28 18:15:56,080 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
-2021-10-28 18:15:56,160 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
-2021-10-28 18:15:56,445 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
-2021-10-28 18:15:56,520 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for erpnextuse.case
-2021-10-28 18:15:56,774 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for erpnextuse.case
-2021-10-28 18:15:56,854 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-28 18:15:57,153 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
-2021-10-28 18:15:57,235 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-28 18:15:57,578 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
-2021-10-28 18:15:57,656 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
-2021-10-28 18:15:57,945 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
+2021-11-11 18:37:08,922 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:39:00,977 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:39:01,620 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:40:01,945 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
+2021-11-11 18:40:02,064 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:40:02,282 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:40:02,495 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
+2021-11-11 18:40:02,578 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
+2021-11-11 18:40:02,957 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
+2021-11-11 18:40:03,048 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
+2021-11-11 18:40:03,435 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
+2021-11-11 18:40:03,515 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
+2021-11-11 18:40:03,912 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
+2021-11-11 18:40:03,988 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
+2021-11-11 18:40:04,218 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
+2021-11-11 18:40:04,315 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
+2021-11-11 18:40:04,517 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
+2021-11-11 18:40:04,605 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
+2021-11-11 18:40:05,152 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
+2021-11-11 18:40:05,251 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
+2021-11-11 18:40:05,866 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
+2021-11-11 18:40:06,001 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
+2021-11-11 18:40:06,433 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
+2021-11-11 18:40:06,522 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
+2021-11-11 18:40:06,799 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
+2021-11-11 18:40:06,936 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-11-11 18:40:07,548 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-11-11 18:40:07,691 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-11-11 18:40:08,053 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-11-11 18:40:08,237 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-11-11 18:40:08,944 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-11-11 18:40:09,040 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-11-11 18:40:09,522 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-11-11 18:40:09,636 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-11-11 18:40:10,135 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-11-11 18:40:10,231 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-11-11 18:40:10,496 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-11-11 18:41:02,603 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:41:02,728 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:42:03,123 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:42:03,375 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:43:03,729 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:43:03,866 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:44:04,205 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
+2021-11-11 18:44:04,332 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:44:04,557 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
+2021-11-11 18:44:04,562 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:44:04,646 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
+2021-11-11 18:44:04,912 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
+2021-11-11 18:44:04,990 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
+2021-11-11 18:44:05,223 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
+2021-11-11 18:44:05,319 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
+2021-11-11 18:44:05,693 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
+2021-11-11 18:44:05,786 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
+2021-11-11 18:44:06,040 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
+2021-11-11 18:44:06,118 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
+2021-11-11 18:44:06,335 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
+2021-11-11 18:44:06,418 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
+2021-11-11 18:44:06,716 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
+2021-11-11 18:44:06,797 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
+2021-11-11 18:44:07,084 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
+2021-11-11 18:44:07,172 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
+2021-11-11 18:44:07,487 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
+2021-11-11 18:44:07,586 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
+2021-11-11 18:44:07,835 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
+2021-11-11 18:44:07,921 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-11-11 18:44:08,184 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-11-11 18:44:08,274 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-11-11 18:44:08,462 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-11-11 18:44:08,539 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-11-11 18:44:08,972 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-11-11 18:44:09,051 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-11-11 18:44:09,321 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-11-11 18:44:09,404 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-11-11 18:44:09,662 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-11-11 18:44:09,757 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-11-11 18:44:09,961 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-11-11 18:45:04,951 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:45:05,042 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
+2021-11-11 18:45:05,171 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:45:05,609 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for erpnextuse.case
+2021-11-11 18:45:05,695 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
+2021-11-11 18:45:06,211 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for erpnextuse.case
+2021-11-11 18:45:06,295 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for erpnextuse.case
+2021-11-11 18:45:06,682 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for erpnextuse.case
+2021-11-11 18:45:06,771 INFO scheduler Scheduled Job Start: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
+2021-11-11 18:45:07,336 INFO scheduler Scheduled Job Complete: frappe.twofactor.delete_all_barcodes_for_users for projectmanagement.sys
+2021-11-11 18:45:07,418 INFO scheduler Scheduled Job Start: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
+2021-11-11 18:45:07,805 INFO scheduler Scheduled Job Complete: frappe.website.doctype.web_page.web_page.check_publish_status for projectmanagement.sys
+2021-11-11 18:45:07,886 INFO scheduler Scheduled Job Start: frappe.oauth.delete_oauth2_data for projectmanagement.sys
+2021-11-11 18:45:08,240 INFO scheduler Scheduled Job Complete: frappe.oauth.delete_oauth2_data for projectmanagement.sys
+2021-11-11 18:46:05,495 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:46:05,623 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:47:06,008 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:47:06,141 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:48:06,463 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
+2021-11-11 18:48:06,559 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:48:06,725 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
+2021-11-11 18:48:06,797 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:48:06,817 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
+2021-11-11 18:48:07,159 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
+2021-11-11 18:48:07,261 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
+2021-11-11 18:48:07,528 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
+2021-11-11 18:48:07,650 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
+2021-11-11 18:48:08,091 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
+2021-11-11 18:48:08,179 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
+2021-11-11 18:48:08,408 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
+2021-11-11 18:48:08,498 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
+2021-11-11 18:48:08,704 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
+2021-11-11 18:48:08,803 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
+2021-11-11 18:48:09,130 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
+2021-11-11 18:48:09,211 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
+2021-11-11 18:48:09,499 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
+2021-11-11 18:48:09,583 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
+2021-11-11 18:48:09,889 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
+2021-11-11 18:48:09,974 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
+2021-11-11 18:48:10,173 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
+2021-11-11 18:48:10,253 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-11-11 18:48:10,542 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-11-11 18:48:10,650 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-11-11 18:48:10,885 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-11-11 18:48:11,014 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-11-11 18:48:11,363 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-11-11 18:48:11,446 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-11-11 18:48:11,749 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-11-11 18:48:11,840 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-11-11 18:48:12,181 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-11-11 18:48:12,262 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-11-11 18:48:12,533 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys
+2021-11-11 18:49:07,136 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:49:07,264 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:50:07,601 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:50:07,761 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:51:08,093 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:51:08,221 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:52:08,573 INFO scheduler Scheduled Job Start: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
+2021-11-11 18:52:08,651 DEBUG scheduler Queued events for site erpnextuse.case
+2021-11-11 18:52:08,903 INFO scheduler Scheduled Job Complete: erpnext.crm.doctype.social_media_post.social_media_post.process_scheduled_social_media_posts for erpnextuse.case
+2021-11-11 18:52:08,903 DEBUG scheduler Queued events for site projectmanagement.sys
+2021-11-11 18:52:08,980 INFO scheduler Scheduled Job Start: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
+2021-11-11 18:52:09,214 INFO scheduler Scheduled Job Complete: erpnext.hr.doctype.interview.interview.send_interview_reminder for erpnextuse.case
+2021-11-11 18:52:09,298 INFO scheduler Scheduled Job Start: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
+2021-11-11 18:52:09,499 INFO scheduler Scheduled Job Complete: erpnext.healthcare.doctype.patient_appointment.patient_appointment.send_appointment_reminder for erpnextuse.case
+2021-11-11 18:52:09,585 INFO scheduler Scheduled Job Start: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
+2021-11-11 18:52:09,954 INFO scheduler Scheduled Job Complete: erpnext.projects.doctype.project.project.project_status_update_reminder for erpnextuse.case
+2021-11-11 18:52:10,033 INFO scheduler Scheduled Job Start: frappe.monitor.flush for erpnextuse.case
+2021-11-11 18:52:10,222 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for erpnextuse.case
+2021-11-11 18:52:10,302 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for erpnextuse.case
+2021-11-11 18:52:10,499 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for erpnextuse.case
+2021-11-11 18:52:10,575 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
+2021-11-11 18:52:10,907 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for erpnextuse.case
+2021-11-11 18:52:10,989 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
+2021-11-11 18:52:11,249 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
+2021-11-11 18:52:11,328 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
+2021-11-11 18:52:11,647 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
+2021-11-11 18:52:11,726 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
+2021-11-11 18:52:11,928 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
+2021-11-11 18:52:12,003 INFO scheduler Scheduled Job Start: frappe.monitor.flush for projectmanagement.sys
+2021-11-11 18:52:12,229 INFO scheduler Scheduled Job Complete: frappe.monitor.flush for projectmanagement.sys
+2021-11-11 18:52:12,302 INFO scheduler Scheduled Job Start: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-11-11 18:52:12,478 INFO scheduler Scheduled Job Complete: frappe.utils.global_search.sync_global_search for projectmanagement.sys
+2021-11-11 18:52:12,558 INFO scheduler Scheduled Job Start: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-11-11 18:52:12,857 INFO scheduler Scheduled Job Complete: frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment for projectmanagement.sys
+2021-11-11 18:52:12,936 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-11-11 18:52:13,222 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for projectmanagement.sys
+2021-11-11 18:52:13,323 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-11-11 18:52:13,603 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for projectmanagement.sys
+2021-11-11 18:52:13,701 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for projectmanagement.sys
+2021-11-11 18:52:14,006 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for projectmanagement.sys

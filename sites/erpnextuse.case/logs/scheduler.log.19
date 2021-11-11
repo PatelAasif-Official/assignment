@@ -1,0 +1,2 @@
+2021-11-09 22:04:35,028 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
+2021-11-09 22:04:35,256 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case

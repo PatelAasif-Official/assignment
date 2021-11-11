@@ -1,1039 +1,6 @@
-2021-10-25 18:22:19,149 ERROR frappe Could not take error snapshot: characters_written
+2021-10-25 23:19:20,939 ERROR frappe Could not take error snapshot: characters_written
 Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Administrator","password":"Maria@1277","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 18:22:35,141 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"admin","password":"Maria@1277","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 18:23:58,161 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Admin","password":"Maria@1277","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 18:24:46,625 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Admin","password":"Maria@1277","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 18:26:14,625 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_account_name":"Admin","email_server":"imap.example.com","smtp_server":"smtp.example.com","domain":"example.com","email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"password":"Maria@1277","smtp_port":null,"incoming_port":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 18:26:34,536 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_account_name":"Admin","email_server":"imap.example.com","smtp_server":"smtp.example.com","domain":"example.com","email_id":"admin@gmail.com","idx":0,"uidnext":0,"no_failed":0,"password":"Maria@1277"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 18:28:27,188 INFO frappe Checking incoming POP3 email server localhost:8001 ssl=0...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":0,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"admin@example.co.in","domain_name":"example.co.in","email_server":"localhost","incoming_port":"8001","smtp_server":"localhost"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 18:31:54,203 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":0,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":0,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Administrator","password":"Maria@1277","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 18:35:30,123 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":0,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Administrator","password":"admin@123","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 18:40:29,592 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":0,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Administrator","password":"admin@123","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 18:46:56,179 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"email_id":"manager@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","smtp_port":null,"incoming_port":null,"email_account_name":"Manager","password":"manager@123","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 18:59:25,317 INFO frappe Checking incoming IMAP email server imap.example.com:8001 ssl=1...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":1,"use_ssl":1,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:29:03.362Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 18:59:25,326 WARNING frappe Incoming email account "imap.example.com" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":1,"use_ssl":1,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:29:03.362Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 34, in validate
-    test = imaplib.IMAP4_SSL(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/imaplib.py", line 1297, in __init__
-    IMAP4.__init__(self, host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 1310, in open
-    IMAP4.open(self, host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 1300, in _create_socket
-    sock = IMAP4._create_socket(self)
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-2021-10-25 18:59:35,282 INFO frappe Checking incoming IMAP email server imap.example.com:8001 ssl=0...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:29:03.362Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 18:59:35,290 WARNING frappe Incoming email account "imap.example.com" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:29:03.362Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 36, in validate
-    test = imaplib.IMAP4(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-2021-10-25 18:59:57,135 INFO frappe Checking incoming IMAP email server imap.localhost:8001 ssl=0...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.localhost","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost","use_tls":0,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:29:03.362Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 19:10:14,323 ERROR frappe New Exception collected with id: 2021-10-25 19:10:14.310721-127.0.0.1-2c8
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"projectmanagement.sys","email_id":"example@projectmanagement.sys","email_server":"imap.projectmanagement.sys","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.projectmanagement.sys","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T13:38:09.262Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 19:10:44,333 INFO frappe Checking incoming POP3 email server Imap.projectmanagement.sys:110 ssl=0...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":0,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 19:10:44,398 WARNING frappe Incoming email account "Imap.projectmanagement.sys" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":0,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 44, in validate
-    test = poplib.POP3(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/poplib.py", line 104, in __init__
-    self.sock = self._create_socket(timeout)
-  File "/usr/lib/python3.8/poplib.py", line 110, in _create_socket
-    return socket.create_connection((self.host, self.port), timeout)
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-2021-10-25 19:11:02,396 INFO frappe Checking incoming IMAP email server Imap.projectmanagement.sys:143 ssl=0...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":1,"use_ssl":0,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 19:11:02,412 WARNING frappe Incoming email account "Imap.projectmanagement.sys" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":1,"use_ssl":0,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 36, in validate
-    test = imaplib.IMAP4(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-2021-10-25 19:11:10,232 INFO frappe Checking incoming POP3 email server Imap.projectmanagement.sys:995 ssl=1...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 19:11:10,250 WARNING frappe Incoming email account "Imap.projectmanagement.sys" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"email_id":"name@projectmanagement.sys","domain_name":"projectmanagement.sys","email_server":"Imap.projectmanagement.sys","smtp_server":"smtp.projectmanagement.sys"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 42, in validate
-    test = poplib.POP3_SSL(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/poplib.py", line 450, in __init__
-    POP3.__init__(self, host, port, timeout)
-  File "/usr/lib/python3.8/poplib.py", line 104, in __init__
-    self.sock = self._create_socket(timeout)
-  File "/usr/lib/python3.8/poplib.py", line 453, in _create_socket
-    sock = POP3._create_socket(self, timeout)
-  File "/usr/lib/python3.8/poplib.py", line 110, in _create_socket
-    return socket.create_connection((self.host, self.port), timeout)
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-2021-10-25 19:14:48,418 INFO frappe Checking incoming POP3 email server imap.gmail.com:993 ssl=1...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 19:14:49,097 WARNING frappe Incoming email account "imap.gmail.com" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 42, in validate
-    test = poplib.POP3_SSL(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/poplib.py", line 450, in __init__
-    POP3.__init__(self, host, port, timeout)
-  File "/usr/lib/python3.8/poplib.py", line 107, in __init__
-    self.welcome = self._getresp()
-  File "/usr/lib/python3.8/poplib.py", line 155, in _getresp
-    raise error_proto(resp)
-poplib.error_proto: b'* OK Gimap ready for requests from 2409:4042:d12:786c:4ed0:dab:800b:7317 m3mb36194522pjo'
-2021-10-25 19:15:19,130 INFO frappe Checking incoming POP3 email server imap.gmail.com:993 ssl=1...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 19:15:20,423 WARNING frappe Incoming email account "imap.gmail.com" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 42, in validate
-    test = poplib.POP3_SSL(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/poplib.py", line 450, in __init__
-    POP3.__init__(self, host, port, timeout)
-  File "/usr/lib/python3.8/poplib.py", line 107, in __init__
-    self.welcome = self._getresp()
-  File "/usr/lib/python3.8/poplib.py", line 155, in _getresp
-    raise error_proto(resp)
-poplib.error_proto: b'* OK Gimap ready for requests from 2409:4042:d12:786c:4ed0:dab:800b:7317 w1mb294651951pjd'
-2021-10-25 19:16:21,934 INFO frappe Checking incoming POP3 email server imap.gmail.com:993 ssl=1...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 19:16:22,674 WARNING frappe Incoming email account "imap.gmail.com" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":0,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 42, in validate
-    test = poplib.POP3_SSL(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/poplib.py", line 450, in __init__
-    POP3.__init__(self, host, port, timeout)
-  File "/usr/lib/python3.8/poplib.py", line 107, in __init__
-    self.welcome = self._getresp()
-  File "/usr/lib/python3.8/poplib.py", line 155, in _getresp
-    raise error_proto(resp)
-poplib.error_proto: b'* OK Gimap ready for requests from 2409:4042:d12:786c:4ed0:dab:800b:7317 me9mb87223838pjb'
-2021-10-25 19:17:16,517 INFO frappe Checking incoming IMAP email server imap.gmail.com:993 ssl=1...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":1,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 19:17:18,051 INFO frappe Checking outgoing SMTPS email server smtp.gmail.com:465...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Domain","name":"new-email-domain-1","__islocal":1,"__unsaved":1,"owner":"Administrator","use_imap":1,"use_ssl":1,"attachment_limit":1,"use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"email_id":"example@gmail.com","domain_name":"gmail.com","email_server":"imap.gmail.com","smtp_server":"smtp.gmail.com","incoming_port":"993","smtp_port":"465"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 19:20:05,238 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":1,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","email_account_name":"Administrator","password":"Maria@1277","smtp_port":null,"incoming_port":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 19:44:36,053 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"docstatus":0,"doctype":"Email Account","name":"new-email-account-1","__islocal":1,"__unsaved":1,"owner":"Administrator","service":"","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"use_tls":0,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":1,"add_signature":0,"enable_auto_reply":0,"email_id":"admin@example.com","idx":0,"uidnext":0,"no_failed":0,"domain":"example.com","email_server":"imap.example.com","smtp_server":"smtp.example.com","email_account_name":"Administrator","password":"Maria@1277","smtp_port":null,"incoming_port":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
-    response = frappe.api.handle()
-  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
-    return frappe.handler.handle()
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
-    data = execute_cmd(cmd)
-  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
-    return fn(*args, **newargs)
-  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
-    return self._save(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 307, in _save
-    self.insert()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 238, in insert
-    self.run_before_save_methods()
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
-    self.get_incoming_server()
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
-    self.check_email_server_connection(email_server, in_receive)
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
-    email_server.connect()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
-    return self.connect_imap()
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
-    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
-  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
-    self._super.__init__(self, *args, **kwargs)
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
-    snapshot = get_snapshot(exception)
-  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
-    value = pydoc.text.repr(getattr(evalue, name))
-AttributeError: characters_written
-2021-10-25 22:57:59,999 INFO frappe Checking incoming POP3 email server imap.example.com:110 ssl=0...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":0,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 22:58:00,592 WARNING frappe Incoming email account "imap.example.com" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.example.com","use_imap":0,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.example.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 44, in validate
-    test = poplib.POP3(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/poplib.py", line 104, in __init__
-    self.sock = self._create_socket(timeout)
-  File "/usr/lib/python3.8/poplib.py", line 110, in _create_socket
-    return socket.create_connection((self.host, self.port), timeout)
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-2021-10-25 22:58:41,473 INFO frappe Checking incoming POP3 email server imap.localhost.com:8001 ssl=0...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.localhost.com","use_imap":0,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 22:58:41,880 WARNING frappe Incoming email account "imap.localhost.com" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.localhost.com","use_imap":0,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 44, in validate
-    test = poplib.POP3(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/poplib.py", line 104, in __init__
-    self.sock = self._create_socket(timeout)
-  File "/usr/lib/python3.8/poplib.py", line 110, in _create_socket
-    return socket.create_connection((self.host, self.port), timeout)
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-2021-10-25 22:58:53,086 INFO frappe Checking incoming IMAP email server imap.localhost.com:8001 ssl=0...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 22:58:53,094 WARNING frappe Incoming email account "imap.localhost.com" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"imap.localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 36, in validate
-    test = imaplib.IMAP4(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-2021-10-25 22:59:01,653 INFO frappe Checking incoming IMAP email server pop.localhost.com:8001 ssl=0...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"pop.localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 22:59:02,045 WARNING frappe Incoming email account "pop.localhost.com" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"pop.localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 36, in validate
-    test = imaplib.IMAP4(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
-    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
-  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
-    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
-socket.gaierror: [Errno -2] Name or service not known
-2021-10-25 22:59:12,115 INFO frappe Checking incoming IMAP email server localhost.com:8001 ssl=0...
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 23:01:22,317 WARNING frappe Incoming email account "localhost.com" not correct
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"example.com","owner":"Administrator","creation":"2021-10-22 11:14:30.412736","modified":"2021-10-22 11:14:30.412736","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"example.com","email_id":"account@example.com","email_server":"localhost.com","use_imap":1,"use_ssl":0,"attachment_limit":1,"smtp_server":"smtp.localhost.com","use_tls":0,"use_ssl_for_outgoing":0,"append_emails_to_sent_folder":0,"doctype":"Email Domain","__last_sync_on":"2021-10-25T17:27:52.630Z","__unsaved":1,"incoming_port":"8001","smtp_port":"8001"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-Traceback (most recent call last):
-  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_domain/email_domain.py", line 36, in validate
-    test = imaplib.IMAP4(self.email_server, port=get_port(self))
-  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
-    self.open(host, port)
-  File "/usr/lib/python3.8/imaplib.py", line 303, in open
-    self.sock = self._create_socket()
-  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
-    return socket.create_connection((host, self.port))
-  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
-    raise err
-  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
-    sock.connect(sa)
-TimeoutError: [Errno 110] Connection timed out
-2021-10-25 23:09:29,947 ERROR frappe Could not take error snapshot: characters_written
-Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"Administrator","owner":"Administrator","creation":"2021-10-25 22:56:03.269108","modified":"2021-10-25 22:56:03.269108","modified_by":"Administrator","idx":0,"docstatus":0,"email_id":"admin@example.com","email_account_name":"Administrator","service":"Sendgrid","password":"Maria@1277","awaiting_password":0,"ascii_encode_password":1,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"email_server":"imap.example.com","attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"smtp_server":"smtp.sendgrid.net","use_tls":1,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":1,"add_signature":0,"enable_auto_reply":0,"uidnext":0,"no_failed":0,"doctype":"Email Account","__unsaved":1,"smtp_port":587,"incoming_port":null,"domain":"example.com"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Form Dict: {'doc': '{"name":"Administrator","owner":"Administrator","creation":"2021-10-25 22:56:03.269108","modified":"2021-10-25 22:56:03.269108","modified_by":"Administrator","idx":0,"docstatus":0,"email_id":"admin@example.com","email_account_name":"Administrator","service":"Sendgrid","password":"Maria@1277","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"email_server":"imap.example.com","attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":1,"smtp_server":"smtp.sendgrid.net","use_tls":1,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"uidnext":0,"no_failed":0,"doctype":"Email Account","__unsaved":1,"smtp_port":587,"incoming_port":null,"domain":"example.com","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
 Traceback (most recent call last):
   File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
     response = frappe.api.handle()
@@ -1093,9 +60,237 @@ Traceback (most recent call last):
   File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
     value = pydoc.text.repr(getattr(evalue, name))
 AttributeError: characters_written
-2021-10-25 23:09:53,070 INFO frappe Checking incoming IMAP email server imap.gmail.com:993 ssl=1...
+2021-10-25 23:19:33,498 ERROR frappe Could not take error snapshot: characters_written
 Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"gmail.com","owner":"Administrator","creation":"2021-10-25 19:17:16.510151","modified":"2021-10-25 19:17:16.510151","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"gmail.com","email_id":"example@gmail.com","email_server":"imap.gmail.com","use_imap":1,"use_ssl":1,"incoming_port":"993","attachment_limit":1,"smtp_server":"smtp.gmail.com","use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"smtp_port":"465","doctype":"Email Domain","__last_sync_on":"2021-10-25T17:37:37.976Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
-2021-10-25 23:09:54,412 INFO frappe Checking outgoing SMTPS email server smtp.gmail.com:465...
+Form Dict: {'doc': '{"name":"Administrator","owner":"Administrator","creation":"2021-10-25 22:56:03.269108","modified":"2021-10-25 22:56:03.269108","modified_by":"Administrator","idx":0,"docstatus":0,"email_id":"admin@example.com","email_account_name":"Administrator","service":"Sendgrid","password":"Maria@1277","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"email_server":"imap.example.com","attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":0,"smtp_server":"smtp.sendgrid.net","use_tls":1,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"uidnext":0,"no_failed":0,"doctype":"Email Account","__unsaved":1,"smtp_port":587,"incoming_port":null,"domain":"example.com","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 320, in _save
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 23:19:41,671 ERROR frappe Could not take error snapshot: characters_written
 Site: projectmanagement.sys
-Form Dict: {'doc': '{"name":"gmail.com","owner":"Administrator","creation":"2021-10-25 19:17:16.510151","modified":"2021-10-25 19:17:16.510151","modified_by":"Administrator","idx":0,"docstatus":0,"domain_name":"gmail.com","email_id":"example@gmail.com","email_server":"imap.gmail.com","use_imap":1,"use_ssl":1,"incoming_port":"993","attachment_limit":1,"smtp_server":"smtp.gmail.com","use_tls":1,"use_ssl_for_outgoing":1,"append_emails_to_sent_folder":0,"smtp_port":"465","doctype":"Email Domain","__last_sync_on":"2021-10-25T17:37:37.976Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Form Dict: {'doc': '{"name":"Administrator","owner":"Administrator","creation":"2021-10-25 22:56:03.269108","modified":"2021-10-25 22:56:03.269108","modified_by":"Administrator","idx":0,"docstatus":0,"email_id":"admin@example.com","email_account_name":"Administrator","service":"Sendgrid","password":"Maria@1277","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"email_server":"imap.example.com","attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":0,"smtp_server":"smtp.sendgrid.net","use_tls":1,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"uidnext":0,"no_failed":0,"doctype":"Email Account","__unsaved":1,"smtp_port":587,"incoming_port":null,"domain":"example.com","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 320, in _save
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 23:24:28,188 ERROR frappe Could not take error snapshot: characters_written
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"Administrator","owner":"Administrator","creation":"2021-10-25 22:56:03.269108","modified":"2021-10-25 22:56:03.269108","modified_by":"Administrator","idx":0,"docstatus":0,"email_id":"admin@example.com","email_account_name":"Administrator","service":"Sendgrid","password":"Maria@1277","awaiting_password":0,"ascii_encode_password":0,"login_id_is_different":0,"enable_incoming":1,"default_incoming":1,"use_imap":1,"use_ssl":0,"email_server":"imap.example.com","attachment_limit":1,"email_sync_option":"UNSEEN","initial_sync_count":"250","append_emails_to_sent_folder":0,"create_contact":1,"enable_automatic_linking":0,"notify_if_unreplied":0,"unreplied_for_mins":30,"enable_outgoing":0,"smtp_server":"smtp.sendgrid.net","use_tls":1,"use_ssl_for_outgoing":0,"default_outgoing":1,"always_use_account_email_id_as_sender":0,"always_use_account_name_as_sender_name":0,"send_unsubscribe_message":1,"track_email_status":1,"no_smtp_authentication":0,"add_signature":0,"enable_auto_reply":0,"uidnext":0,"no_failed":0,"doctype":"Email Account","__unsaved":1,"smtp_port":587,"incoming_port":null,"domain":"example.com","no_remaining":null}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/app.py", line 68, in application
+    response = frappe.api.handle()
+  File "/home/user/assignment/apps/frappe/frappe/api.py", line 55, in handle
+    return frappe.handler.handle()
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 31, in handle
+    data = execute_cmd(cmd)
+  File "/home/user/assignment/apps/frappe/frappe/handler.py", line 67, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/user/assignment/apps/frappe/frappe/__init__.py", line 1199, in call
+    return fn(*args, **newargs)
+  File "/home/user/assignment/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 285, in save
+    return self._save(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 320, in _save
+    self.run_before_save_methods()
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 968, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 860, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1158, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 1141, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/user/assignment/apps/frappe/frappe/model/document.py", line 854, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 72, in validate
+    self.get_incoming_server()
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 194, in get_incoming_server
+    self.check_email_server_connection(email_server, in_receive)
+  File "/home/user/assignment/apps/frappe/frappe/email/doctype/email_account/email_account.py", line 207, in check_email_server_connection
+    email_server.connect()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 51, in connect
+    return self.connect_imap()
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 61, in connect_imap
+    self.imap = Timed_IMAP4(self.settings.host, self.settings.incoming_port, timeout=frappe.conf.get("pop_timeout"))
+  File "/home/user/assignment/apps/frappe/frappe/email/receive.py", line 570, in __init__
+    self._super.__init__(self, *args, **kwargs)
+  File "/usr/lib/python3.8/imaplib.py", line 198, in __init__
+    self.open(host, port)
+  File "/usr/lib/python3.8/imaplib.py", line 303, in open
+    self.sock = self._create_socket()
+  File "/usr/lib/python3.8/imaplib.py", line 293, in _create_socket
+    return socket.create_connection((host, self.port))
+  File "/usr/lib/python3.8/socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "/usr/lib/python3.8/socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -2] Name or service not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/user/assignment/apps/frappe/frappe/utils/error.py", line 127, in get_snapshot
+    value = pydoc.text.repr(getattr(evalue, name))
+AttributeError: characters_written
+2021-10-25 23:36:02,600 ERROR frappe New Exception collected with id: 2021-10-25 23:36:02.594534-127.0.0.1-e33
+Site: projectmanagement.sys
+Form Dict: {'recipients': 'manager@example.com, ', 'subject': 'Hi', 'content': '<div class="ql-editor read-mode"><p>Its an test attampt 2</p></div>', 'send_email': '1', 'print_html': '', 'send_me_a_copy': '1', 'print_format': '', 'attachments': '[]', '_lang': 'en', 'read_receipt': '0', 'print_letterhead': '1', 'cmd': 'frappe.core.doctype.communication.email.make'}
+2021-10-25 23:43:48,848 ERROR frappe New Exception collected with id: 2021-10-25 23:43:48.843848-127.0.0.1-3ed
+Site: projectmanagement.sys
+Form Dict: {'recipients': 'manager@example.com, ', 'subject': 'Hi Its an Test Attamp 2', 'content': '<div class="ql-editor read-mode"><p>Its an test attampt 2</p></div>', 'send_email': '1', 'print_html': '', 'send_me_a_copy': '1', 'print_format': '', 'attachments': '[]', '_lang': 'en', 'read_receipt': '0', 'print_letterhead': '1', 'cmd': 'frappe.core.doctype.communication.email.make'}
+2021-10-26 00:04:04,211 ERROR frappe New Exception collected with id: 2021-10-26 00:04:04.123647-127.0.0.1-e51
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-021","owner":"manager@example.com","creation":"2021-10-25 15:13:19.314971","modified":"2021-10-26 00:02:12.984176","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"ERPNext Setup for online Salon system","project_id":"1021-021","project_title":"ERPNext For Salon sytem","start_date":"2021-10-25","end_date":"2021-11-05","status":"WIP","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 00:40:47,506 ERROR frappe New Exception collected with id: 2021-10-26 00:40:47.415042-127.0.0.1-046
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-022","owner":"manager@example.com","creation":"2021-10-26 00:10:03.568463","modified":"2021-10-26 00:12:36.497111","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"Task on Demo Project","project_id":"1021-022","project_title":"Demo Project","start_date":"2021-10-26","end_date":"2021-10-27","status":"under QA","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 00:48:03,901 ERROR frappe New Exception collected with id: 2021-10-26 00:48:03.809300-127.0.0.1-60e
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-022","owner":"manager@example.com","creation":"2021-10-26 00:10:03.568463","modified":"2021-10-26 00:41:52.759025","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"Task on Demo Project","project_id":"1021-022","project_title":"Demo Project","start_date":"2021-10-26","end_date":"2021-10-27","status":"under QA","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 00:48:27,128 ERROR frappe New Exception collected with id: 2021-10-26 00:48:27.025732-127.0.0.1-5b4
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-022","owner":"manager@example.com","creation":"2021-10-26 00:10:03.568463","modified":"2021-10-26 00:41:52.759025","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"Task on Demo Project","project_id":"1021-022","project_title":"Demo Project","start_date":"2021-10-26","end_date":"2021-10-27","status":"under QA","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 00:49:12,121 ERROR frappe New Exception collected with id: 2021-10-26 00:49:12.026305-127.0.0.1-f1d
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-022","owner":"manager@example.com","creation":"2021-10-26 00:10:03.568463","modified":"2021-10-26 00:41:52.759025","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"Task on Demo Project","project_id":"1021-022","project_title":"Demo Project","start_date":"2021-10-26","end_date":"2021-10-27","status":"under QA","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 00:52:28,045 ERROR frappe New Exception collected with id: 2021-10-26 00:52:27.949295-127.0.0.1-8ce
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-022","owner":"manager@example.com","creation":"2021-10-26 00:10:03.568463","modified":"2021-10-26 00:50:26.073823","modified_by":"developer@example.com","idx":0,"docstatus":0,"task_title":"Task on Demo Project","project_id":"1021-022","project_title":"Demo Project","start_date":"2021-10-26","end_date":"2021-10-27","status":"WIP","assignee":"manager@example.com","doctype":"Project Task","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-10-26 11:09:20,080 ERROR frappe New Exception collected with id: 2021-10-26 11:09:19.998931-127.0.0.1-ba9
+Site: projectmanagement.sys
+Form Dict: {'doc': '{"name":"1021-021","owner":"manager@example.com","creation":"2021-10-25 15:13:19.314971","modified":"2021-10-26 11:02:06.827862","modified_by":"qa@example.com","idx":0,"docstatus":0,"task_title":"ERPNext Setup for online Salon system","project_id":"1021-021","project_title":"ERPNext For Salon sytem","start_date":"2021-10-25","end_date":"2021-11-05","status":"under QA","assignee":"manager@example.com","doctype":"Project Task","__last_sync_on":"2021-10-26T05:39:15.622Z","__unsaved":1}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2021-11-01 13:32:11,438 ERROR frappe New Exception collected with id: 2021-11-01 13:32:11.368762-127.0.0.1-a6d
+Site: erpnextuse.case
+Form Dict: {'cmd': 'erpnext.selling.doctype.sales_order.api.get_sales_order_details'}
+2021-11-01 13:32:33,189 ERROR frappe New Exception collected with id: 2021-11-01 13:32:33.123531-127.0.0.1-f77
+Site: erpnextuse.case
+Form Dict: {'cmd': 'erpnext.selling.doctype.sales_order.api.get_sales_order_details'}
+2021-11-01 13:36:07,536 ERROR frappe New Exception collected with id: 2021-11-01 13:36:07.469641-127.0.0.1-580
+Site: erpnextuse.case
+Form Dict: {'cmd': 'erpnext.selling.doctype.sales_order.api.get_sales_order_details'}
+2021-11-02 17:55:45,961 ERROR frappe New Exception collected with id: 2021-11-02 17:55:45.850684-127.0.0.1-086
+Site: erpnextuse.case
+Form Dict: {'doc': '{"name":"SAL-QTN-2021-00005","owner":"patelasif@example.com","creation":"2021-11-02 17:27:01.061016","modified":"2021-11-02 17:30:07.112918","modified_by":"patelasif@example.com","idx":0,"docstatus":0,"workflow_state":"Draft","title":"Iqbal Ahmed Khan","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Customer","party_name":"Iqbal Ahmed","customer_name":"Iqbal Ahmed Khan","company":"Company XYZ INDIA PVT. LTD.","transaction_date":"2021-11-02","valid_till":"2021-12-02","order_type":"Sales","customer_address":"Customer add-Billing","address_display":"229, Mohala bhag 2, Mohala<br>Akot<br>\\nPostal Code: 444101<br>India<br>\\n","contact_person":"Iqbal Khan-Iqbal Ahmed","contact_display":"Iqbal Khan","contact_mobile":"","contact_email":"","shipping_address_name":"Customer add-Billing","shipping_address":"229, Mohala bhag 2, Mohala<br>Akot<br>\\nPostal Code: 444101<br>India<br>\\n","customer_group":"All Customer Groups","territory":"All Territories","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":2,"base_total":113999,"base_net_total":104879.08,"total":113999,"net_total":104879.08,"total_net_weight":0,"tax_category":"In-State","other_charges_calculation":"<div class=\\"tax-break-up\\" style=\\"overflow-x: auto;\\">\\n\\t<table class=\\"table table-bordered table-hover\\">\\n\\t\\t<thead>\\n\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-left\\">Item</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Taxable Amount</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">TDS</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t</tr>\\n\\t\\t</thead>\\n\\t\\t<tbody>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IP-13</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 72,680.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(12.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 8,721.60\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>OPN-2</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 32,199.08\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(12.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 3,863.89\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t</tbody>\\n\\t</table>\\n</div>","base_total_taxes_and_charges":12585.49,"total_taxes_and_charges":12585.49,"apply_discount_on":"Grand Total","base_discount_amount":10214.31,"additional_discount_percentage":8,"discount_amount":10214.31,"base_grand_total":117464.57,"base_rounding_adjustment":0.43,"base_in_words":"INR One Lakh, Seventeen Thousand, Four Hundred And Sixty Five only.","base_rounded_total":117465,"grand_total":117464.57,"rounding_adjustment":0.43,"rounded_total":117465,"in_words":"INR One Lakh, Seventeen Thousand, Four Hundred And Sixty Five only.","tc_name":"Basic Terms","terms":"<div class=\\"ql-editor read-mode\\"><h3><strong>Terms &amp; Condition</strong></h3><p><br></p><p><em style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">The information contained in this document is believed to be correct, but COMPANY PVT. LTD. accepts no liability for any errors and reserves the right to alter specifications without notice</em></p><p><br></p><ol><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Price</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex Work</li><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Packing</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1% Charge for safe packaging of your product</li><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Freight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>On \'Freight to pay\' basic.</li></ol><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;<strong>&nbsp;&nbsp;&nbsp;</strong>&nbsp;<strong>&nbsp;&nbsp;&nbsp;OR</strong></p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>\\t<strong>&nbsp;&nbsp;</strong>\\t<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>(If Freight paid &amp; to be reimbursed in the invoice then applicable GST)</p><ol><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>GST</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For </span><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Bill To Location within Maharashtra </strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">CGST &amp; SGST @ 18% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Media Degasser &amp; Peristaltic Pump CGST &amp; SGST @ 28% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span>F<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">or </span><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Bill To Location out of Maharashtra </strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">IGST @ 18% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Media Degasser &amp; Peristaltic Pump IGST @ 28% will be applicable.</span></li></ol><p><strong>Note: </strong></p><p><strong>&nbsp;</strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">The title of the goods will remain with COMPANY Pvt. Ltd. till the receipt of 100% payment.</span></p><p><br></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Company xyz PVT ltd.</strong></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Prepared By</strong></p><p><br></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Sales Head&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;<strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sales Manager</strong></p><p><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Electronically Authorised By&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\\t<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Electronically Authorised By</span></p></div>","letter_head":"Company XYZ India PVT LTD","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","items":[{"name":"517fad2f07","owner":"patelasif@example.com","creation":"2021-11-02 17:27:01.061016","modified":"2021-11-02 17:30:07.112918","modified_by":"patelasif@example.com","parent":"SAL-QTN-2021-00005","parentfield":"items","parenttype":"Quotation","idx":1,"docstatus":0,"item_code":"IP-13","item_name":"Iphone 13","description":"<div><p>iPhone 13 </p></div>","is_nil_exempt":0,"is_non_gst":0,"item_group":"Products","brand":"Iphone","image":"/files/iphone-13-pro-blue-select.jpeg","qty":1,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":1,"price_list_rate":79000,"base_price_list_rate":79000,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":79000,"net_rate":72680,"amount":79000,"net_amount":72680,"base_rate":79000,"base_net_rate":72680,"base_amount":79000,"base_net_amount":72680,"stock_uom_rate":79000,"is_free_item":0,"valuation_rate":0,"gross_profit":79000,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - Company XYZ","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":-1,"actual_qty":0,"item_tax_rate":"{}","page_break":0,"doctype":"Quotation Item"},{"name":"e8ddb1c8da","owner":"patelasif@example.com","creation":"2021-11-02 17:27:01.061016","modified":"2021-11-02 17:30:07.112918","modified_by":"patelasif@example.com","parent":"SAL-QTN-2021-00005","parentfield":"items","parenttype":"Quotation","idx":2,"docstatus":0,"item_code":"OPN-2","item_name":"One Plus Nord 2, 5g","description":"<div><p>One Plus Nord 2 5G Phone</p></div>","is_nil_exempt":0,"is_non_gst":0,"item_group":"Products","brand":"ONE Plus","image":"/files/Nord.jpg","qty":1,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":1,"price_list_rate":34999,"base_price_list_rate":34999,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":34999,"net_rate":32199.08,"amount":34999,"net_amount":32199.08,"item_tax_template":"GST 12% - AssDe","base_rate":34999,"base_net_rate":32199.08,"base_amount":34999,"base_net_amount":32199.08,"stock_uom_rate":34999,"is_free_item":0,"valuation_rate":0,"gross_profit":34999,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - Company XYZ","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"actual_qty":0,"item_tax_rate":"{\\"Output Tax SGST - Company XYZ\\": 6.0, \\"Output Tax CGST - Company XYZ\\": 6.0, \\"Output Tax IGST - Company XYZ\\": 12.0, \\"Input Tax SGST - Company XYZ\\": 6.0, \\"Input Tax CGST - Company XYZ\\": 6.0, \\"Input Tax IGST - Company XYZ\\": 12.0, \\"Input Tax SGST RCM - Company XYZ\\": 6.0, \\"Input Tax CGST RCM - Company XYZ\\": 6.0, \\"Input Tax IGST RCM - Company XYZ\\": 12.0}","page_break":0,"doctype":"Quotation Item"}],"packed_items":[],"pricing_rules":[],"taxes":[{"name":"a739d0166f","owner":"patelasif@example.com","creation":"2021-11-02 17:27:01.061016","modified":"2021-11-02 17:30:07.112918","modified_by":"patelasif@example.com","parent":"SAL-QTN-2021-00005","parentfield":"taxes","parenttype":"Quotation","idx":1,"docstatus":0,"charge_type":"On Net Total","account_head":"TDS - Company XYZ","description":"TDS","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - Company XYZ","rate":12,"account_currency":"INR","tax_amount":13679.88,"total":117464.57,"tax_amount_after_discount_amount":12585.49,"base_tax_amount":13679.88,"base_total":117464.57,"base_tax_amount_after_discount_amount":12585.49,"item_wise_tax_detail":"{\\"IP-13\\":[12.0,8721.6],\\"OPN-2\\":[12.0,3863.8896]}","dont_recompute_tax":0,"doctype":"Sales Taxes and Charges"}],"payment_schedule":[{"name":"a5d285b235","creation":"2021-11-02 17:27:01.572591","modified":"2021-11-02 17:30:07.112918","modified_by":"patelasif@example.com","parent":"SAL-QTN-2021-00005","parentfield":"payment_schedule","parenttype":"Quotation","idx":1,"docstatus":0,"due_date":"2021-11-02","invoice_portion":100,"discount":0,"payment_amount":117465,"outstanding":117465,"paid_amount":0,"discounted_amount":0,"base_payment_amount":117465,"doctype":"Payment Schedule","owner":"patelasif@example.com"}],"lost_reasons":[],"__onload":{"make_payment_via_journal_entry":0}}', 'print_format': 'Custom PF', 'no_letterhead': '0', 'letterhead': 'Company XYZ India PVT LTD', 'settings': '{}', '_lang': 'en', 'cmd': 'frappe.www.printview.get_html_and_style'}
+2021-11-03 14:09:42,573 ERROR frappe New Exception collected with id: 2021-11-03 14:09:42.437644-127.0.0.1-c8f
+Site: erpnextuse.case
+Form Dict: {'doc': '{"name":"SAL-QTN-2021-00005","owner":"patelasif@example.com","creation":"2021-11-02 17:27:01.061016","modified":"2021-11-02 17:30:07.112918","modified_by":"patelasif@example.com","idx":0,"docstatus":0,"workflow_state":"Draft","title":"Iqbal Ahmed Khan","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Customer","party_name":"Iqbal Ahmed","customer_name":"Iqbal Ahmed Khan","company":"Company XYZ INDIA PVT. LTD.","transaction_date":"2021-11-02","valid_till":"2021-12-02","order_type":"Sales","customer_address":"Customer add-Billing","address_display":"229, Mohala bhag 2, Mohala<br>Akot<br>\\nPostal Code: 444101<br>India<br>\\n","contact_person":"Iqbal Khan-Iqbal Ahmed","contact_display":"Iqbal Khan","contact_mobile":"","contact_email":"","shipping_address_name":"Customer add-Billing","shipping_address":"229, Mohala bhag 2, Mohala<br>Akot<br>\\nPostal Code: 444101<br>India<br>\\n","customer_group":"All Customer Groups","territory":"All Territories","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":2,"base_total":113999,"base_net_total":104879.08,"total":113999,"net_total":104879.08,"total_net_weight":0,"tax_category":"In-State","other_charges_calculation":"<div class=\\"tax-break-up\\" style=\\"overflow-x: auto;\\">\\n\\t<table class=\\"table table-bordered table-hover\\">\\n\\t\\t<thead>\\n\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-left\\">Item</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Taxable Amount</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">TDS</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t</tr>\\n\\t\\t</thead>\\n\\t\\t<tbody>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IP-13</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 72,680.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(12.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 8,721.60\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>OPN-2</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 32,199.08\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(12.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 3,863.89\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t</tbody>\\n\\t</table>\\n</div>","base_total_taxes_and_charges":12585.49,"total_taxes_and_charges":12585.49,"apply_discount_on":"Grand Total","base_discount_amount":10214.31,"additional_discount_percentage":8,"discount_amount":10214.31,"base_grand_total":117464.57,"base_rounding_adjustment":0.43,"base_in_words":"INR One Lakh, Seventeen Thousand, Four Hundred And Sixty Five only.","base_rounded_total":117465,"grand_total":117464.57,"rounding_adjustment":0.43,"rounded_total":117465,"in_words":"INR One Lakh, Seventeen Thousand, Four Hundred And Sixty Five only.","tc_name":"Basic Terms","terms":"<div class=\\"ql-editor read-mode\\"><h3><strong>Terms &amp; Condition</strong></h3><p><br></p><p><em style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">The information contained in this document is believed to be correct, but COMPANY PVT. LTD. accepts no liability for any errors and reserves the right to alter specifications without notice</em></p><p><br></p><ol><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Price</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex Work</li><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Packing</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1% Charge for safe packaging of your product</li><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Freight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>On \'Freight to pay\' basic.</li></ol><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;<strong>&nbsp;&nbsp;&nbsp;</strong>&nbsp;<strong>&nbsp;&nbsp;&nbsp;OR</strong></p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>\\t<strong>&nbsp;&nbsp;</strong>\\t<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>(If Freight paid &amp; to be reimbursed in the invoice then applicable GST)</p><ol><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>GST</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For </span><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Bill To Location within Maharashtra </strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">CGST &amp; SGST @ 18% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Media Degasser &amp; Peristaltic Pump CGST &amp; SGST @ 28% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span>F<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">or </span><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Bill To Location out of Maharashtra </strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">IGST @ 18% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Media Degasser &amp; Peristaltic Pump IGST @ 28% will be applicable.</span></li></ol><p><strong>Note: </strong></p><p><strong>&nbsp;</strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">The title of the goods will remain with COMPANY Pvt. Ltd. till the receipt of 100% payment.</span></p><p><br></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Company xyz PVT ltd.</strong></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Prepared By</strong></p><p><br></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Sales Head&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;<strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sales Manager</strong></p><p><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Electronically Authorised By&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\\t<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Electronically Authorised By</span></p></div>","letter_head":"Company XYZ India PVT LTD","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","items":[{"name":"517fad2f07","owner":"patelasif@example.com","creation":"2021-11-02 17:27:01.061016","modified":"2021-11-02 17:30:07.112918","modified_by":"patelasif@example.com","parent":"SAL-QTN-2021-00005","parentfield":"items","parenttype":"Quotation","idx":1,"docstatus":0,"item_code":"IP-13","item_name":"Iphone 13","description":"<div><p>iPhone 13 </p></div>","is_nil_exempt":0,"is_non_gst":0,"item_group":"Products","brand":"Iphone","image":"/files/iphone-13-pro-blue-select.jpeg","qty":1,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":1,"price_list_rate":79000,"base_price_list_rate":79000,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":79000,"net_rate":72680,"amount":79000,"net_amount":72680,"base_rate":79000,"base_net_rate":72680,"base_amount":79000,"base_net_amount":72680,"stock_uom_rate":79000,"is_free_item":0,"valuation_rate":0,"gross_profit":79000,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - Company XYZ","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":-1,"actual_qty":0,"item_tax_rate":"{}","page_break":0,"doctype":"Quotation Item"},{"name":"e8ddb1c8da","owner":"patelasif@example.com","creation":"2021-11-02 17:27:01.061016","modified":"2021-11-02 17:30:07.112918","modified_by":"patelasif@example.com","parent":"SAL-QTN-2021-00005","parentfield":"items","parenttype":"Quotation","idx":2,"docstatus":0,"item_code":"OPN-2","item_name":"One Plus Nord 2, 5g","description":"<div><p>One Plus Nord 2 5G Phone</p></div>","is_nil_exempt":0,"is_non_gst":0,"item_group":"Products","brand":"ONE Plus","image":"/files/Nord.jpg","qty":1,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":1,"price_list_rate":34999,"base_price_list_rate":34999,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":34999,"net_rate":32199.08,"amount":34999,"net_amount":32199.08,"item_tax_template":"GST 12% - AssDe","base_rate":34999,"base_net_rate":32199.08,"base_amount":34999,"base_net_amount":32199.08,"stock_uom_rate":34999,"is_free_item":0,"valuation_rate":0,"gross_profit":34999,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - Company XYZ","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"actual_qty":0,"item_tax_rate":"{\\"Output Tax SGST - Company XYZ\\": 6.0, \\"Output Tax CGST - Company XYZ\\": 6.0, \\"Output Tax IGST - Company XYZ\\": 12.0, \\"Input Tax SGST - Company XYZ\\": 6.0, \\"Input Tax CGST - Company XYZ\\": 6.0, \\"Input Tax IGST - Company XYZ\\": 12.0, \\"Input Tax SGST RCM - Company XYZ\\": 6.0, \\"Input Tax CGST RCM - Company XYZ\\": 6.0, \\"Input Tax IGST RCM - Company XYZ\\": 12.0}","page_break":0,"doctype":"Quotation Item"}],"packed_items":[],"pricing_rules":[],"taxes":[{"name":"a739d0166f","owner":"patelasif@example.com","creation":"2021-11-02 17:27:01.061016","modified":"2021-11-02 17:30:07.112918","modified_by":"patelasif@example.com","parent":"SAL-QTN-2021-00005","parentfield":"taxes","parenttype":"Quotation","idx":1,"docstatus":0,"charge_type":"On Net Total","account_head":"TDS - Company XYZ","description":"TDS","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - Company XYZ","rate":12,"account_currency":"INR","tax_amount":13679.88,"total":117464.57,"tax_amount_after_discount_amount":12585.49,"base_tax_amount":13679.88,"base_total":117464.57,"base_tax_amount_after_discount_amount":12585.49,"item_wise_tax_detail":"{\\"IP-13\\":[12.0,8721.6],\\"OPN-2\\":[12.0,3863.8896]}","dont_recompute_tax":0,"doctype":"Sales Taxes and Charges"}],"payment_schedule":[{"name":"a5d285b235","owner":"patelasif@example.com","creation":"2021-11-02 17:27:01.572591","modified":"2021-11-02 17:30:07.112918","modified_by":"patelasif@example.com","parent":"SAL-QTN-2021-00005","parentfield":"payment_schedule","parenttype":"Quotation","idx":1,"docstatus":0,"due_date":"2021-11-02","invoice_portion":100,"discount":0,"payment_amount":117465,"outstanding":117465,"paid_amount":0,"discounted_amount":0,"base_payment_amount":117465,"doctype":"Payment Schedule"}],"lost_reasons":[],"__onload":{"make_payment_via_journal_entry":0},"__last_sync_on":"2021-11-03T08:11:38.377Z"}', 'print_format': 'Custom PF', 'no_letterhead': '0', 'letterhead': 'Company XYZ India PVT LTD', 'settings': '{}', '_lang': 'en', 'cmd': 'frappe.www.printview.get_html_and_style'}
+2021-11-03 14:36:26,207 ERROR frappe New Exception collected with id: 2021-11-03 14:36:26.158891-127.0.0.1-b61
+Site: erpnextuse.case
+Form Dict: {'doc': '{"name":"SAL-QTN-2021-00006","owner":"user@example.com","creation":"2021-11-03 14:36:09.560015","modified":"2021-11-03 14:36:09.560015","modified_by":"user@example.com","idx":0,"docstatus":0,"workflow_state":"Draft","title":"Aasif Patel","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Customer","party_name":"Aasif Patel","customer_name":"Aasif Patel","company":"Company XYZ INDIA PVT. LTD.","transaction_date":"2021-11-03","valid_till":"2021-12-03","order_type":"Sales","customer_address":"Asif Add.-Billing","address_display":"596, Paradize Palace, Near Taj Shopping Mall<br>Amravati<br>\\nPostal Code: 444601<br>India<br>\\n","contact_person":"Asif Khan-Aasif Patel","contact_display":"Mr Asif Khan","contact_mobile":"8208168203","contact_email":"","shipping_address_name":"Asif Add.-Billing","shipping_address":"596, Paradize Palace, Near Taj Shopping Mall<br>Amravati<br>\\nPostal Code: 444601<br>India<br>\\n","customer_group":"All Customer Groups","territory":"All Territories","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":2,"base_total":148490,"base_net_total":136610.8,"total":148490,"net_total":136610.8,"total_net_weight":1.6,"tax_category":"","taxes_and_charges":"Output GST In-state - Company XYZ","other_charges_calculation":"<div class=\\"tax-break-up\\" style=\\"overflow-x: auto;\\">\\n\\t<table class=\\"table table-bordered table-hover\\">\\n\\t\\t<thead>\\n\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-left\\">Item</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Taxable Amount</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Output Tax SGST @ 9.0</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Output Tax CGST @ 9.0</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t</tr>\\n\\t\\t</thead>\\n\\t\\t<tbody>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>HP-Px360</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 63,930.80\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 5,753.77\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 5,753.77\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IP-13</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 72,680.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 6,541.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 6,541.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t</tbody>\\n\\t</table>\\n</div>","base_total_taxes_and_charges":24589.94,"total_taxes_and_charges":24589.94,"apply_discount_on":"Grand Total","base_discount_amount":14017.46,"additional_discount_percentage":8,"discount_amount":14017.46,"base_grand_total":161200.74,"base_rounding_adjustment":0.26,"base_in_words":"INR One Lakh, Sixty One Thousand, Two Hundred And One only.","base_rounded_total":161201,"grand_total":161200.74,"rounding_adjustment":0.26,"rounded_total":161201,"in_words":"INR One Lakh, Sixty One Thousand, Two Hundred And One only.","tc_name":"Basic Terms","terms":"<div class=\\"ql-editor read-mode\\"><p><em style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">The information contained in this document is believed to be correct, but COMPANY PVT. LTD. accepts no liability for any errors and reserves the right to alter specifications without notice</em></p><p><br></p><ol><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Price</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex Work</li><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Packing</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1% Charge for safe packaging of your product</li><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Freight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>On \'Freight to pay\' basic.</li></ol><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;<strong>&nbsp;&nbsp;&nbsp;</strong>&nbsp;<strong>&nbsp;&nbsp;&nbsp;OR</strong></p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>\\t<strong>&nbsp;&nbsp;</strong>\\t<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>(If Freight paid &amp; to be reimbursed in the invoice then applicable GST on Freight charges will be apply )</p><ol><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>GST</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For </span><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Bill To Location within Maharashtra </strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">CGST &amp; SGST @ 18% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Media Degasser &amp; Peristaltic Pump CGST &amp; SGST @ 28% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span>F<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">or </span><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Bill To Location out of Maharashtra </strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">IGST @ 18% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Media Degasser &amp; Peristaltic Pump IGST @ 28% will be applicable.</span></li></ol><p><strong>Note: </strong></p><p><strong>&nbsp;</strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">The title of the goods will remain with COMPANY Pvt. Ltd. till the receipt of 100% payment.</span></p><p><br></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Company xyz PVT ltd.</strong></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Prepared By</strong></p><p><br></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Sales Head&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;<strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sales Manager</strong></p><p><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Electronically Authorised By&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\\t<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Electronically Authorised By</span></p></div>","letter_head":"Company XYZ India PVT LTD","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","items":[{"name":"01b6f43352","owner":"user@example.com","creation":"2021-11-03 14:36:09.560015","modified":"2021-11-03 14:36:09.560015","modified_by":"user@example.com","parent":"SAL-QTN-2021-00006","parentfield":"items","parenttype":"Quotation","idx":1,"docstatus":0,"item_code":"HP-Px360","item_name":"HP Pavilion x360","description":"<div><p><strong>HP Pavilion x360 </strong></p><p>11th Gen Intel Core i5 </p><p>14-inch(35.6 cm) Touchscreen </p><p>2-in-1 FHD</p><p>16GB/512GB SSD/Fingerprint Reader</p><p>Windows 10/MS Office/Natural Silver</p><p>1.41 Kg</p></div>","gst_hsn_code":"42345435","is_nil_exempt":0,"is_non_gst":0,"item_group":"Products","brand":"HP","image":"","qty":1,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":1,"price_list_rate":69490,"base_price_list_rate":69490,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":69490,"net_rate":63930.8,"amount":69490,"net_amount":63930.8,"base_rate":69490,"base_net_rate":63930.8,"base_amount":69490,"base_net_amount":63930.8,"stock_uom_rate":69490,"is_free_item":0,"valuation_rate":0,"gross_profit":69490,"weight_per_unit":1.6,"total_weight":1.6,"weight_uom":"Nos","warehouse":"Stores - Company XYZ","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"actual_qty":0,"item_tax_rate":"{}","page_break":0,"doctype":"Quotation Item"},{"name":"980d4fe32a","owner":"user@example.com","creation":"2021-11-03 14:36:09.560015","modified":"2021-11-03 14:36:09.560015","modified_by":"user@example.com","parent":"SAL-QTN-2021-00006","parentfield":"items","parenttype":"Quotation","idx":2,"docstatus":0,"item_code":"IP-13","item_name":"Iphone 13","description":"<div><p>iPhone 13 </p></div>","is_nil_exempt":0,"is_non_gst":0,"item_group":"Products","brand":"Iphone","image":"/files/iphone-13-pro-blue-select.jpeg","qty":1,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":1,"price_list_rate":79000,"base_price_list_rate":79000,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":79000,"net_rate":72680,"amount":79000,"net_amount":72680,"base_rate":79000,"base_net_rate":72680,"base_amount":79000,"base_net_amount":72680,"stock_uom_rate":79000,"is_free_item":0,"valuation_rate":0,"gross_profit":79000,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - Company XYZ","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":-1,"actual_qty":0,"item_tax_rate":"{}","page_break":0,"doctype":"Quotation Item"}],"packed_items":[],"pricing_rules":[],"taxes":[{"name":"b910f57eb5","owner":"user@example.com","creation":"2021-11-03 14:36:09.560015","modified":"2021-11-03 14:36:09.560015","modified_by":"user@example.com","parent":"SAL-QTN-2021-00006","parentfield":"taxes","parenttype":"Quotation","idx":1,"docstatus":0,"charge_type":"On Net Total","account_head":"Output Tax SGST - Company XYZ","description":"Output Tax SGST @ 9.0","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - Company XYZ","rate":9,"tax_amount":13364.1,"total":148905.77,"tax_amount_after_discount_amount":12294.97,"base_tax_amount":13364.1,"base_total":148905.77,"base_tax_amount_after_discount_amount":12294.97,"item_wise_tax_detail":"{\\"HP-Px360\\":[9.0,5753.772],\\"IP-13\\":[9.0,6541.2]}","dont_recompute_tax":0,"doctype":"Sales Taxes and Charges"},{"name":"6993403e05","owner":"user@example.com","creation":"2021-11-03 14:36:09.560015","modified":"2021-11-03 14:36:09.560015","modified_by":"user@example.com","parent":"SAL-QTN-2021-00006","parentfield":"taxes","parenttype":"Quotation","idx":2,"docstatus":0,"charge_type":"On Net Total","account_head":"Output Tax CGST - Company XYZ","description":"Output Tax CGST @ 9.0","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - Company XYZ","rate":9,"tax_amount":13364.1,"total":161200.74,"tax_amount_after_discount_amount":12294.97,"base_tax_amount":13364.1,"base_total":161200.74,"base_tax_amount_after_discount_amount":12294.97,"item_wise_tax_detail":"{\\"HP-Px360\\":[9.0,5753.772],\\"IP-13\\":[9.0,6541.2]}","dont_recompute_tax":0,"doctype":"Sales Taxes and Charges"}],"payment_schedule":[{"name":"30022f8fd1","creation":"2021-11-03 14:36:09.999373","modified":"2021-11-03 14:36:09.999373","modified_by":"user@example.com","parent":"SAL-QTN-2021-00006","parentfield":"payment_schedule","parenttype":"Quotation","idx":1,"docstatus":0,"due_date":"2021-11-03","invoice_portion":100,"discount":0,"payment_amount":161201,"outstanding":161201,"paid_amount":0,"discounted_amount":0,"base_payment_amount":161201,"doctype":"Payment Schedule"}],"lost_reasons":[],"__onload":{"make_payment_via_journal_entry":0},"__last_sync_on":"2021-11-03T09:06:20.357Z"}', 'print_format': 'Custom PF', 'no_letterhead': '0', 'letterhead': 'Company XYZ India PVT LTD', 'settings': '{}', '_lang': 'en', 'cmd': 'frappe.www.printview.get_html_and_style'}
+2021-11-03 14:37:06,099 ERROR frappe New Exception collected with id: 2021-11-03 14:37:06.077387-127.0.0.1-10f
+Site: erpnextuse.case
+Form Dict: {'doc': '{"name":"SAL-QTN-2021-00006","owner":"user@example.com","creation":"2021-11-03 14:36:09.560015","modified":"2021-11-03 14:36:09.560015","modified_by":"user@example.com","idx":0,"docstatus":0,"workflow_state":"Draft","title":"Aasif Patel","naming_series":"SAL-QTN-.YYYY.-","quotation_to":"Customer","party_name":"Aasif Patel","customer_name":"Aasif Patel","company":"Company XYZ INDIA PVT. LTD.","transaction_date":"2021-11-03","valid_till":"2021-12-03","order_type":"Sales","customer_address":"Asif Add.-Billing","address_display":"596, Paradize Palace, Near Taj Shopping Mall<br>Amravati<br>\\nPostal Code: 444601<br>India<br>\\n","contact_person":"Asif Khan-Aasif Patel","contact_display":"Mr Asif Khan","contact_mobile":"8208168203","contact_email":"","shipping_address_name":"Asif Add.-Billing","shipping_address":"596, Paradize Palace, Near Taj Shopping Mall<br>Amravati<br>\\nPostal Code: 444601<br>India<br>\\n","customer_group":"All Customer Groups","territory":"All Territories","currency":"INR","conversion_rate":1,"selling_price_list":"Standard Selling","price_list_currency":"INR","plc_conversion_rate":1,"ignore_pricing_rule":0,"total_qty":2,"base_total":148490,"base_net_total":136610.8,"total":148490,"net_total":136610.8,"total_net_weight":1.6,"tax_category":"","taxes_and_charges":"Output GST In-state - Company XYZ","other_charges_calculation":"<div class=\\"tax-break-up\\" style=\\"overflow-x: auto;\\">\\n\\t<table class=\\"table table-bordered table-hover\\">\\n\\t\\t<thead>\\n\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-left\\">Item</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Taxable Amount</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Output Tax SGST @ 9.0</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t<th class=\\"text-right\\">Output Tax CGST @ 9.0</th>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\n\\t\\t\\t</tr>\\n\\t\\t</thead>\\n\\t\\t<tbody>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>HP-Px360</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 63,930.80\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 5,753.77\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 5,753.77\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t\\t\\t<tr>\\n\\t\\t\\t\\t\\t<td>IP-13</td>\\n\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t₹ 72,680.00\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 6,541.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t<td class=\\"text-right\\">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t(9.0%)\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t₹ 6,541.20\\n\\t\\t\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\t\\t</td>\\n\\t\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t\\t\\n\\t\\t\\t\\t</tr>\\n\\t\\t\\t\\n\\t\\t</tbody>\\n\\t</table>\\n</div>","base_total_taxes_and_charges":24589.94,"total_taxes_and_charges":24589.94,"apply_discount_on":"Grand Total","base_discount_amount":14017.46,"additional_discount_percentage":8,"discount_amount":14017.46,"base_grand_total":161200.74,"base_rounding_adjustment":0.26,"base_in_words":"INR One Lakh, Sixty One Thousand, Two Hundred And One only.","base_rounded_total":161201,"grand_total":161200.74,"rounding_adjustment":0.26,"rounded_total":161201,"in_words":"INR One Lakh, Sixty One Thousand, Two Hundred And One only.","tc_name":"Basic Terms","terms":"<div class=\\"ql-editor read-mode\\"><p><em style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">The information contained in this document is believed to be correct, but COMPANY PVT. LTD. accepts no liability for any errors and reserves the right to alter specifications without notice</em></p><p><br></p><ol><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Price</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex Work</li><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Packing</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1% Charge for safe packaging of your product</li><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>Freight&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>On \'Freight to pay\' basic.</li></ol><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;<strong>&nbsp;&nbsp;&nbsp;</strong>&nbsp;<strong>&nbsp;&nbsp;&nbsp;OR</strong></p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>\\t<strong>&nbsp;&nbsp;</strong>\\t<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>(If Freight paid &amp; to be reimbursed in the invoice then applicable GST on Freight charges will be apply )</p><ol><li data-list=\\"bullet\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><strong>GST</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For </span><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Bill To Location within Maharashtra </strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">CGST &amp; SGST @ 18% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Media Degasser &amp; Peristaltic Pump CGST &amp; SGST @ 28% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span>F<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">or </span><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Bill To Location out of Maharashtra </strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">IGST @ 18% will be applicable.</span></li><li class=\\"ql-indent-3\\" data-list=\\"ordered\\"><span class=\\"ql-ui\\" contenteditable=\\"false\\"></span><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Media Degasser &amp; Peristaltic Pump IGST @ 28% will be applicable.</span></li></ol><p><strong>Note: </strong></p><p><strong>&nbsp;</strong><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">The title of the goods will remain with COMPANY Pvt. Ltd. till the receipt of 100% payment.</span></p><p><br></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">For Company xyz PVT ltd.</strong></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Prepared By</strong></p><p><br></p><p><strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Sales Head&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;<strong style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sales Manager</strong></p><p><span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">Electronically Authorised By&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\\t<span style=\\"background-color: transparent; color: rgb(0, 0, 0);\\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Electronically Authorised By</span></p></div>","letter_head":"Company XYZ India PVT LTD","group_same_items":0,"language":"en","status":"Draft","doctype":"Quotation","items":[{"name":"01b6f43352","owner":"user@example.com","creation":"2021-11-03 14:36:09.560015","modified":"2021-11-03 14:36:09.560015","modified_by":"user@example.com","parent":"SAL-QTN-2021-00006","parentfield":"items","parenttype":"Quotation","idx":1,"docstatus":0,"item_code":"HP-Px360","item_name":"HP Pavilion x360","description":"<div><p><strong>HP Pavilion x360 </strong></p><p>11th Gen Intel Core i5 </p><p>14-inch(35.6 cm) Touchscreen </p><p>2-in-1 FHD</p><p>16GB/512GB SSD/Fingerprint Reader</p><p>Windows 10/MS Office/Natural Silver</p><p>1.41 Kg</p></div>","gst_hsn_code":"42345435","is_nil_exempt":0,"is_non_gst":0,"item_group":"Products","brand":"HP","image":"","qty":1,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":1,"price_list_rate":69490,"base_price_list_rate":69490,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":69490,"net_rate":63930.8,"amount":69490,"net_amount":63930.8,"base_rate":69490,"base_net_rate":63930.8,"base_amount":69490,"base_net_amount":63930.8,"stock_uom_rate":69490,"is_free_item":0,"valuation_rate":0,"gross_profit":69490,"weight_per_unit":1.6,"total_weight":1.6,"weight_uom":"Nos","warehouse":"Stores - Company XYZ","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":0,"actual_qty":0,"item_tax_rate":"{}","page_break":0,"doctype":"Quotation Item"},{"name":"980d4fe32a","owner":"user@example.com","creation":"2021-11-03 14:36:09.560015","modified":"2021-11-03 14:36:09.560015","modified_by":"user@example.com","parent":"SAL-QTN-2021-00006","parentfield":"items","parenttype":"Quotation","idx":2,"docstatus":0,"item_code":"IP-13","item_name":"Iphone 13","description":"<div><p>iPhone 13 </p></div>","is_nil_exempt":0,"is_non_gst":0,"item_group":"Products","brand":"Iphone","image":"/files/iphone-13-pro-blue-select.jpeg","qty":1,"stock_uom":"Nos","uom":"Nos","conversion_factor":1,"stock_qty":1,"price_list_rate":79000,"base_price_list_rate":79000,"margin_type":"","margin_rate_or_amount":0,"rate_with_margin":0,"discount_percentage":0,"discount_amount":0,"base_rate_with_margin":0,"rate":79000,"net_rate":72680,"amount":79000,"net_amount":72680,"base_rate":79000,"base_net_rate":72680,"base_amount":79000,"base_net_amount":72680,"stock_uom_rate":79000,"is_free_item":0,"valuation_rate":0,"gross_profit":79000,"weight_per_unit":0,"total_weight":0,"warehouse":"Stores - Company XYZ","against_blanket_order":0,"blanket_order_rate":0,"projected_qty":-1,"actual_qty":0,"item_tax_rate":"{}","page_break":0,"doctype":"Quotation Item"}],"packed_items":[],"pricing_rules":[],"taxes":[{"name":"b910f57eb5","owner":"user@example.com","creation":"2021-11-03 14:36:09.560015","modified":"2021-11-03 14:36:09.560015","modified_by":"user@example.com","parent":"SAL-QTN-2021-00006","parentfield":"taxes","parenttype":"Quotation","idx":1,"docstatus":0,"charge_type":"On Net Total","account_head":"Output Tax SGST - Company XYZ","description":"Output Tax SGST @ 9.0","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - Company XYZ","rate":9,"tax_amount":13364.1,"total":148905.77,"tax_amount_after_discount_amount":12294.97,"base_tax_amount":13364.1,"base_total":148905.77,"base_tax_amount_after_discount_amount":12294.97,"item_wise_tax_detail":"{\\"HP-Px360\\":[9.0,5753.772],\\"IP-13\\":[9.0,6541.2]}","dont_recompute_tax":0,"doctype":"Sales Taxes and Charges"},{"name":"6993403e05","owner":"user@example.com","creation":"2021-11-03 14:36:09.560015","modified":"2021-11-03 14:36:09.560015","modified_by":"user@example.com","parent":"SAL-QTN-2021-00006","parentfield":"taxes","parenttype":"Quotation","idx":2,"docstatus":0,"charge_type":"On Net Total","account_head":"Output Tax CGST - Company XYZ","description":"Output Tax CGST @ 9.0","included_in_print_rate":0,"included_in_paid_amount":0,"cost_center":"Main - Company XYZ","rate":9,"tax_amount":13364.1,"total":161200.74,"tax_amount_after_discount_amount":12294.97,"base_tax_amount":13364.1,"base_total":161200.74,"base_tax_amount_after_discount_amount":12294.97,"item_wise_tax_detail":"{\\"HP-Px360\\":[9.0,5753.772],\\"IP-13\\":[9.0,6541.2]}","dont_recompute_tax":0,"doctype":"Sales Taxes and Charges"}],"payment_schedule":[{"name":"30022f8fd1","creation":"2021-11-03 14:36:09.999373","modified":"2021-11-03 14:36:09.999373","modified_by":"user@example.com","parent":"SAL-QTN-2021-00006","parentfield":"payment_schedule","parenttype":"Quotation","idx":1,"docstatus":0,"due_date":"2021-11-03","invoice_portion":100,"discount":0,"payment_amount":161201,"outstanding":161201,"paid_amount":0,"discounted_amount":0,"base_payment_amount":161201,"doctype":"Payment Schedule"}],"lost_reasons":[],"__onload":{"make_payment_via_journal_entry":0},"__last_sync_on":"2021-11-03T09:06:56.321Z"}', 'print_format': 'Custom PF', 'no_letterhead': '0', 'letterhead': 'Company XYZ India PVT LTD', 'settings': '{}', '_lang': 'en', 'cmd': 'frappe.www.printview.get_html_and_style'}

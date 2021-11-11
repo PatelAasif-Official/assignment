@@ -376,3 +376,192 @@ To avoid seeing this warning, set shallow_clone to false in your common_site_con
 2021-10-28 17:33:34,162 INFO /usr/local/bin/bench worker --queue long
 2021-10-28 18:00:01,572 INFO /usr/local/bin/bench --verbose --site all backup
 2021-10-28 18:00:49,425 INFO /usr/local/bin/bench version
+2021-10-29 11:40:03,976 INFO /usr/local/bin/bench start
+2021-10-29 11:40:05,116 INFO /usr/local/bin/bench worker --queue default
+2021-10-29 11:40:05,184 INFO /usr/local/bin/bench worker --queue short
+2021-10-29 11:40:05,200 INFO /usr/local/bin/bench watch
+2021-10-29 11:40:05,216 INFO /usr/local/bin/bench serve --port 8001
+2021-10-29 11:40:05,257 INFO /usr/local/bin/bench worker --queue long
+2021-10-29 11:40:05,320 INFO /usr/local/bin/bench schedule
+2021-10-29 12:00:01,548 INFO /usr/local/bin/bench --verbose --site all backup
+2021-10-29 17:10:19,557 INFO /usr/local/bin/bench mariadb
+2021-10-29 17:10:51,242 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-10-29 18:00:01,472 INFO /usr/local/bin/bench --verbose --site all backup
+2021-10-31 16:51:47,470 INFO /usr/local/bin/bench start
+2021-10-31 16:51:48,613 INFO /usr/local/bin/bench watch
+2021-10-31 16:51:48,845 INFO /usr/local/bin/bench schedule
+2021-10-31 16:51:48,867 INFO /usr/local/bin/bench worker --queue default
+2021-10-31 16:51:48,911 INFO /usr/local/bin/bench serve --port 8001
+2021-10-31 16:51:48,984 INFO /usr/local/bin/bench worker --queue long
+2021-10-31 16:51:49,047 INFO /usr/local/bin/bench worker --queue short
+2021-11-01 11:13:07,819 INFO /usr/local/bin/bench start
+2021-11-01 11:13:08,863 INFO /usr/local/bin/bench serve --port 8001
+2021-11-01 11:13:08,985 INFO /usr/local/bin/bench worker --queue short
+2021-11-01 11:13:09,015 INFO /usr/local/bin/bench worker --queue long
+2021-11-01 11:13:09,060 INFO /usr/local/bin/bench watch
+2021-11-01 11:13:09,062 INFO /usr/local/bin/bench schedule
+2021-11-01 11:13:09,114 INFO /usr/local/bin/bench worker --queue default
+2021-11-01 12:00:01,379 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-01 13:33:03,130 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-01 13:46:46,657 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-01 18:00:01,377 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-02 10:05:07,776 INFO /usr/local/bin/bench Start
+2021-11-02 10:05:08,168 WARNING /usr/local/bin/bench Start executed with exit code 2
+2021-11-02 10:05:15,349 INFO /usr/local/bin/bench start
+2021-11-02 10:05:16,318 INFO /usr/local/bin/bench watch
+2021-11-02 10:05:16,374 INFO /usr/local/bin/bench serve --port 8001
+2021-11-02 10:05:16,426 INFO /usr/local/bin/bench worker --queue short
+2021-11-02 10:05:16,457 INFO /usr/local/bin/bench worker --queue default
+2021-11-02 10:05:16,490 INFO /usr/local/bin/bench worker --queue long
+2021-11-02 10:05:16,517 INFO /usr/local/bin/bench schedule
+2021-11-02 12:00:02,046 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-02 17:42:39,899 INFO /usr/local/bin/bench --site erpnextuse.case mariadn
+2021-11-02 17:42:49,432 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-02 18:00:02,332 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-03 10:09:32,176 INFO /usr/local/bin/bench start
+2021-11-03 10:09:33,265 INFO /usr/local/bin/bench watch
+2021-11-03 10:09:33,398 INFO /usr/local/bin/bench schedule
+2021-11-03 10:09:33,438 INFO /usr/local/bin/bench worker --queue default
+2021-11-03 10:09:33,463 INFO /usr/local/bin/bench worker --queue long
+2021-11-03 10:09:33,555 INFO /usr/local/bin/bench worker --queue short
+2021-11-03 10:09:33,559 INFO /usr/local/bin/bench serve --port 8001
+2021-11-03 10:45:10,429 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-03 12:00:01,900 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-03 18:00:01,951 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-04 11:22:16,745 INFO /usr/local/bin/bench start
+2021-11-04 11:22:17,863 INFO /usr/local/bin/bench schedule
+2021-11-04 11:22:17,875 INFO /usr/local/bin/bench worker --queue default
+2021-11-04 11:22:17,926 INFO /usr/local/bin/bench watch
+2021-11-04 11:22:18,094 INFO /usr/local/bin/bench worker --queue short
+2021-11-04 11:22:18,128 INFO /usr/local/bin/bench serve --port 8001
+2021-11-04 11:22:18,161 INFO /usr/local/bin/bench worker --queue long
+2021-11-04 12:01:48,095 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-04 12:36:37,331 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-04 15:20:42,840 INFO /usr/local/bin/bench start
+2021-11-04 15:20:44,053 INFO /usr/local/bin/bench schedule
+2021-11-04 15:20:44,070 INFO /usr/local/bin/bench serve --port 8001
+2021-11-04 15:20:44,070 INFO /usr/local/bin/bench watch
+2021-11-04 15:20:44,164 INFO /usr/local/bin/bench worker --queue default
+2021-11-04 15:20:44,184 INFO /usr/local/bin/bench worker --queue short
+2021-11-04 15:20:44,197 INFO /usr/local/bin/bench worker --queue long
+2021-11-04 16:02:27,312 INFO /usr/local/bin/bench start
+2021-11-04 16:02:28,409 INFO /usr/local/bin/bench watch
+2021-11-04 16:02:28,416 INFO /usr/local/bin/bench worker --queue default
+2021-11-04 16:02:28,437 INFO /usr/local/bin/bench worker --queue long
+2021-11-04 16:02:28,459 INFO /usr/local/bin/bench schedule
+2021-11-04 16:02:28,525 INFO /usr/local/bin/bench serve --port 8001
+2021-11-04 16:02:28,562 INFO /usr/local/bin/bench worker --queue short
+2021-11-04 17:14:36,074 INFO /usr/local/bin/bench start
+2021-11-04 17:14:37,357 INFO /usr/local/bin/bench worker --queue long
+2021-11-04 17:14:37,360 INFO /usr/local/bin/bench worker --queue short
+2021-11-04 17:14:37,459 INFO /usr/local/bin/bench watch
+2021-11-04 17:14:37,487 INFO /usr/local/bin/bench serve --port 8001
+2021-11-04 17:14:37,560 INFO /usr/local/bin/bench worker --queue default
+2021-11-04 17:14:37,579 INFO /usr/local/bin/bench schedule
+2021-11-04 18:00:01,421 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-04 18:52:56,753 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-08 12:00:01,391 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-08 12:05:38,762 INFO /usr/local/bin/bench start
+2021-11-08 12:05:39,718 INFO /usr/local/bin/bench watch
+2021-11-08 12:05:39,859 INFO /usr/local/bin/bench worker --queue short
+2021-11-08 12:05:39,866 INFO /usr/local/bin/bench serve --port 8001
+2021-11-08 12:05:39,877 INFO /usr/local/bin/bench worker --queue default
+2021-11-08 12:05:39,887 INFO /usr/local/bin/bench schedule
+2021-11-08 12:05:39,972 INFO /usr/local/bin/bench worker --queue long
+2021-11-08 18:00:01,867 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-09 00:00:02,480 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-09 12:00:02,186 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-09 13:06:48,894 INFO /usr/local/bin/bench start
+2021-11-09 13:06:49,854 INFO /usr/local/bin/bench serve --port 8001
+2021-11-09 13:06:49,894 INFO /usr/local/bin/bench watch
+2021-11-09 13:06:49,894 INFO /usr/local/bin/bench worker --queue long
+2021-11-09 13:06:50,045 INFO /usr/local/bin/bench worker --queue short
+2021-11-09 13:06:50,167 INFO /usr/local/bin/bench schedule
+2021-11-09 13:06:50,180 INFO /usr/local/bin/bench worker --queue default
+2021-11-09 13:34:13,667 INFO /usr/local/bin/bench mariadb
+2021-11-09 13:34:30,127 INFO /usr/local/bin/bench -site erpnextuse.case mariadb
+2021-11-09 13:34:30,407 WARNING /usr/local/bin/bench -site erpnextuse.case mariadb executed with exit code 2
+2021-11-09 13:34:41,719 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-09 13:35:00,709 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-09 14:36:26,586 INFO /usr/local/bin/bench console
+2021-11-09 14:36:40,221 INFO /usr/local/bin/bench --site erpnextuse.case console
+2021-11-09 14:48:33,569 INFO /usr/local/bin/bench --site erpnextuse.case console
+2021-11-09 14:52:33,795 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-09 18:00:01,381 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-09 18:29:05,346 INFO /usr/local/bin/bench list-app
+2021-11-09 18:29:05,636 WARNING /usr/local/bin/bench list-app executed with exit code 2
+2021-11-09 18:29:25,951 INFO /usr/local/bin/bench --site erpnextuse.case list-app
+2021-11-09 18:29:31,057 INFO /usr/local/bin/bench --site erpnextuse.case -list-app
+2021-11-09 18:32:39,243 INFO /usr/local/bin/bench --help
+2021-11-09 18:32:51,283 INFO /usr/local/bin/bench --site help
+2021-11-09 18:32:55,273 INFO /usr/local/bin/bench --site -help
+2021-11-09 18:32:59,293 INFO /usr/local/bin/bench --site --help
+2021-11-09 18:33:10,182 INFO /usr/local/bin/bench --help
+2021-11-09 18:34:05,992 INFO /usr/local/bin/bench -installed-app
+2021-11-09 18:34:06,321 WARNING /usr/local/bin/bench -installed-app executed with exit code 2
+2021-11-09 18:34:16,437 INFO /usr/local/bin/bench --installed-app
+2021-11-09 18:34:16,782 WARNING /usr/local/bin/bench --installed-app executed with exit code 2
+2021-11-09 18:34:18,986 INFO /usr/local/bin/bench --installed-apps
+2021-11-09 18:34:19,260 WARNING /usr/local/bin/bench --installed-apps executed with exit code 2
+2021-11-09 18:34:37,386 INFO /usr/local/bin/bench --site erpnextuse.case -installed-apps
+2021-11-09 18:34:39,925 INFO /usr/local/bin/bench --site erpnextuse.case -installed-app
+2021-11-09 18:34:48,471 INFO /usr/local/bin/bench --site erpnextuse.case list-app
+2021-11-09 18:34:51,876 INFO /usr/local/bin/bench --site erpnextuse.case -list-app
+2021-11-09 18:35:01,596 INFO /usr/local/bin/bench --site erpnextuse.case clea
+2021-11-09 18:35:15,746 INFO /usr/local/bin/bench --help
+2021-11-09 19:01:59,047 INFO /usr/local/bin/bench --site erpnextuse.case console
+2021-11-09 20:26:27,198 INFO /usr/local/bin/bench --site erpnextuse.case console
+2021-11-09 21:19:54,317 INFO /usr/local/bin/bench --site erpnextuse.case console
+2021-11-09 22:07:56,062 INFO /usr/local/bin/bench --site erpnextuse.case console
+2021-11-09 22:14:05,466 INFO /usr/local/bin/bench --site erpnextuse.case console
+2021-11-10 10:25:55,431 INFO /usr/local/bin/bench start
+2021-11-10 10:25:56,568 INFO /usr/local/bin/bench schedule
+2021-11-10 10:25:56,588 INFO /usr/local/bin/bench worker --queue default
+2021-11-10 10:25:56,602 INFO /usr/local/bin/bench serve --port 8001
+2021-11-10 10:25:56,617 INFO /usr/local/bin/bench watch
+2021-11-10 10:25:56,696 INFO /usr/local/bin/bench worker --queue long
+2021-11-10 10:25:56,785 INFO /usr/local/bin/bench worker --queue short
+2021-11-10 11:22:32,448 INFO /usr/local/bin/bench --site erpnextuse.case console
+2021-11-10 11:22:49,490 INFO /usr/local/bin/bench --site erpnextuse.case meriadb
+2021-11-10 11:22:58,796 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-10 12:00:02,447 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-10 18:00:02,034 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-10 18:22:09,892 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-10 18:22:20,966 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-11 11:27:09,406 INFO /usr/local/bin/bench start
+2021-11-11 11:27:10,541 INFO /usr/local/bin/bench watch
+2021-11-11 11:27:10,609 INFO /usr/local/bin/bench schedule
+2021-11-11 11:27:10,640 INFO /usr/local/bin/bench worker --queue short
+2021-11-11 11:27:10,680 INFO /usr/local/bin/bench serve --port 8001
+2021-11-11 11:27:10,697 INFO /usr/local/bin/bench worker --queue long
+2021-11-11 11:27:10,737 INFO /usr/local/bin/bench worker --queue default
+2021-11-11 11:30:23,614 INFO /usr/local/bin/bench --site erpnextuse.case maradb
+2021-11-11 11:30:29,736 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-11 11:30:48,951 INFO /usr/local/bin/bench --site erpnextuse.case onsole
+2021-11-11 11:30:53,212 INFO /usr/local/bin/bench --site erpnextuse.case console
+2021-11-11 12:00:01,868 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-11 14:58:40,175 INFO /usr/local/bin/bench start
+2021-11-11 14:58:41,238 INFO /usr/local/bin/bench worker --queue short
+2021-11-11 14:58:41,240 INFO /usr/local/bin/bench serve --port 8001
+2021-11-11 14:58:41,339 INFO /usr/local/bin/bench schedule
+2021-11-11 14:58:41,352 INFO /usr/local/bin/bench worker --queue long
+2021-11-11 14:58:41,467 INFO /usr/local/bin/bench watch
+2021-11-11 14:58:41,494 INFO /usr/local/bin/bench worker --queue default
+2021-11-11 15:40:19,932 INFO /usr/local/bin/bench --site erpnextuse.case mariadb
+2021-11-11 15:47:35,159 INFO /usr/local/bin/bench start
+2021-11-11 15:47:36,262 INFO /usr/local/bin/bench worker --queue default
+2021-11-11 15:47:36,351 INFO /usr/local/bin/bench serve --port 8001
+2021-11-11 15:47:36,387 INFO /usr/local/bin/bench worker --queue short
+2021-11-11 15:47:36,424 INFO /usr/local/bin/bench schedule
+2021-11-11 15:47:36,509 INFO /usr/local/bin/bench watch
+2021-11-11 15:47:36,548 INFO /usr/local/bin/bench worker --queue long
+2021-11-11 15:47:50,498 INFO /usr/local/bin/bench --site erpnextuse.case console
+2021-11-11 15:54:54,779 INFO /usr/local/bin/bench --site erpnextuse.case console
+2021-11-11 18:00:01,339 INFO /usr/local/bin/bench --verbose --site all backup
+2021-11-11 18:37:57,880 INFO /usr/local/bin/bench start
+2021-11-11 18:37:58,999 INFO /usr/local/bin/bench watch
+2021-11-11 18:37:59,075 INFO /usr/local/bin/bench schedule
+2021-11-11 18:37:59,088 INFO /usr/local/bin/bench worker --queue short
+2021-11-11 18:37:59,092 INFO /usr/local/bin/bench worker --queue long
+2021-11-11 18:37:59,134 INFO /usr/local/bin/bench serve --port 8001
+2021-11-11 18:37:59,170 INFO /usr/local/bin/bench worker --queue default

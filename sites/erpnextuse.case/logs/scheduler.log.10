@@ -1,0 +1,5 @@
+2021-11-10 18:52:26,944 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.notify_unreplied for erpnextuse.case
+2021-11-10 18:52:27,055 INFO scheduler Scheduled Job Start: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
+2021-11-10 18:52:27,443 INFO scheduler Scheduled Job Complete: frappe.email.doctype.email_account.email_account.pull for erpnextuse.case
+2021-11-10 18:52:27,542 INFO scheduler Scheduled Job Start: frappe.email.queue.flush for erpnextuse.case
+2021-11-10 18:52:27,839 INFO scheduler Scheduled Job Complete: frappe.email.queue.flush for erpnextuse.case
